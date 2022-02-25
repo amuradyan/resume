@@ -18,7 +18,7 @@ Freelance
 
 **Tech used:** Scala, Akka HTTP, MQL, Javascript, Python, Cython
 
-**Tasks:** Design and implementation of the backend for a ticker data aggregator from different MetaTrader4 vendors in Scala and MQL, processing Excel workbooks with financial data from different providers /normalisation, exporting to PDF/ in Python. Validation of a framework for testing collateralized loan obligations and implementation of tests for CLOs in that framework.
+**Tasks:** Design and implementation of the backend for a ticker data aggregator from different MetaTrader4 vendors in Scala and MQL, processing Excel workbooks with financial data from different providers /normalization, exporting to PDF/ in Python. Validation of a framework for testing collateralized loan obligations and implementation of tests for CLOs in that framework.
 
 ### 11.11.2016 – 01.02.2018
 Co-founder and senior developer – Praddicts CJSC
@@ -71,7 +71,7 @@ Software developer - Smart-Tech LTD
 
 #### Projects during PhD
 
-**Tech used:** Java, Xtext, Xtend, EMF, Alloy /relational modelling language/
+**Tech used:** Java, Xtext, Xtend, EMF, Alloy /relational modeling language/
 
 **Tasks:** Implementation of the scheduler in jDEECo. Vehicle routing model /in Java, based on DEECo platform/. DSL design for [CBSE](https://en.wikipedia.org/wiki/Component-based_software_engineering)
 
