@@ -13,7 +13,7 @@ Technical Trainer - Quality Testing Lab
 
 **Tasks:** Design and implementation of a number of testing frameworks for online shops. Started as simple Selenium tests and gradually moved to SerenityBDD. Compilation of Gherkin scenarios from user requirements. Integration with Browserstack․ Development of toy projects in Java for exercising with juniors.
 
-01/02/2018 - 01/03/2020
+### 01/02/2018 - 01/03/2020
 Freelance
 
 **Tech used:** Scala, Akka HTTP, MQL, Javascript, Python, Cython
