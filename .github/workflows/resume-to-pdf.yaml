@@ -1,0 +1,39 @@
+name: Convert RESUME to PDF
+on:
+  push:
+    branches: [main]
+    paths:
+      - README.md
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install texlive-xetex
+          sudo apt-get install pandoc
+          sudo apt-get install fonts-gfs-neohellenic
+          sudo apt-get install fonts-noto
+          sudo apt-get install fonts-firacode
+          fc-cache -f -v
+      - name: Convert MD to PDF
+        run: |
+          pandoc --pdf-engine=xelatex README.md -o RESUME.pdf -V mainfont="Noto Sans" -V monofont="Fira Code" -V geometry:margin=15mm -V fontsize=12pt
+        env:
+          LANG: en_US.UTF-8
+      - name: Commit RESUME.pdf
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add RESUME.pdf
+          git commit -a -m "RESUME.pdf updated"
+      - name: Push to repo
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+          directory: .
+          message: Update RESUME.pdf

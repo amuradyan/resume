@@ -1,5 +1,6 @@
 # Andranik Muradyan
 
+[PDF (latest version)](https://amuradyan.github.io/resume/RESUME.pdf) |
 [github](https://github.com/amuradyan) |
 [email](mailto:muradianator@gmail.com) |
 [Yerevan, Armenia](https://www.openstreetmap.org/relation/364087#map=12/40.1614/44.5259)
@@ -8,7 +9,7 @@
 
 ### 04.04.2022 - present
 
-Mid Scala engineer - Dataart Armenia
+Mid Scala engineer - [Dataart Armenia](https://www.dataart.com)
 
 **Tech used:** Scala 2.13, Akka, Play, tAPIr, AWS SQS, IBM MQ, Cats /rarely/
 
