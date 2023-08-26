@@ -11,7 +11,7 @@
 
 Mid Scala engineer - [Dataart Armenia](https://www.dataart.com)
 
-**Tech used:** Scala 2.13, Akka, Play, tAPIr, AWS SQS, IBM MQ, Cats /rarely/
+**Tech used:** Scala 2.13, Akka, Play, tAPIr, AWS SQS, IBM MQ, Cats
 
 **Tasks:** Miscellaneous
 
