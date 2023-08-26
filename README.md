@@ -69,7 +69,7 @@ Software developer - WestSoft LTD
 
 **Tech used:** C++ as the main programming language /ATL, STL/, MySQL
 
-**Tasks:** Design and implementation of an ORM for MySQL\C++ for an ERP application /early stages/. Library for custom report generation in rich text format.
+**Tasks:** Design and implementation of an ORM for MySQL\\C++ for an ERP application /early stages/. Library for custom report generation in rich text format.
 
 ### 25.12.2006 - 21.06.2007
 
