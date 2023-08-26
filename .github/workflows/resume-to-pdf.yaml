@@ -15,12 +15,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install texlive-xetex
           sudo apt-get install pandoc
-          sudo apt-get install fonts-gfs-neohellenic
-          sudo apt-get install fonts-noto
-          fc-cache -f -v
       - name: Convert MD to PDF
         run: |
-          pandoc --pdf-engine=xelatex README.md -o RESUME.pdf -V mainfont="Noto Sans" -V monofont="Fira Code" -V geometry:margin=15mm -V fontsize=12pt
+          pandoc --pdf-engine=xelatex README.md -o RESUME.pdf -V geometry:margin=15mm -V fontsize=12pt
         env:
           LANG: en_US.UTF-8
       - name: Commit RESUME.pdf
@@ -36,4 +33,3 @@ jobs:
           branch: main
           directory: .
           message: Update RESUME.pdf
-          
