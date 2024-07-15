@@ -81,9 +81,11 @@ Software developer - Smart-Tech LTD
 
 ## Education
 
+### PhD /unfinished/
+
 ### Department of Distributed and Dependable Systems, Faculty of Mathematics and Physics, Charles University in Prague /Ph.D./
 
-2013-2014 /Ph.D., unfinished/
+2013-2014
 
 **Courses:** Concepts of Modern Programming Languages /Groovy, Scala, Io, …/, Embedded and Real-Time Systems /RTEMS/, System Behaviour Models and Verification /PROMELA, NuSMV/
 
@@ -93,35 +95,15 @@ Software developer - Smart-Tech LTD
 
 **Tasks:** Implementation of the scheduler in jDEECo. Vehicle routing model /in Java, based on DEECo platform/. DSL design for [CBSE](https://en.wikipedia.org/wiki/Component-based_software_engineering)
 
-### UJOP UK, Czech Republic, Podebrady /Czech language courses/
 
-2012-2013
+### Bachelor and Master
 
-**Bias:** Czech language
+From 2004 to 2008, I pursued my Bachelor's degree in Computer Science at The State Engineering University of Armenia in Yerevan, focusing on Cryptographic Algorithms and Information Security.
 
-### The National Academy of Sciences of Armenia, Yerevan /M.Sc./
-
-2008-2010
-
-**Bias:** Information Theory
-
-### The State Engineering University of Armenia, Yerevan /BCompSc/
-
-2004-2008
-
-**Bias:** Cryptographic Algorithms and Information Security
-
-### No.1 school after A.Shahinyan with physics-mathematical bias, Yerevan
-
-2001-2004
-
-### School no.139 after K. Demirchyan with English bias, Yerevan
-
-1994-2001
+I, then, continued my education at The National Academy of Sciences of Armenia in Yerevan, where I earned my Master's degree between 2008 and 2010, centering my studies around Information Theory.
 
 ## Languages
 
 * Armenian – native
-* Russian – excellent
-* English – fine
-* Czech – good
+* Russian – advanced
+* English – upper-intermediate
