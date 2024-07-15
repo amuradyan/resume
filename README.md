@@ -35,18 +35,18 @@
 **Tasks:** Design and implementation of the backend for a ticker data aggregator from different MetaTrader4 vendors in Scala and MQL, processing Excel workbooks with financial data from different providers /normalization, exporting to PDF/ in Python. Validation of a framework for testing collateralized loan obligations and implementation of tests for CLOs in that framework.
 
 
-### Co-founder and senior developer – Praddicts CJSC
+### Co-founder and senior developer - Praddicts CJSC
 
-11.11.2016 – 01.02.2018
+11.11.2016 - 01.02.2018
 
 **Tech used:** Java as the main programming language, Scala, JavaScript. Spring, PostgreSQL, MongoDB, Apache Spark, Apache Kafka, JenkinsCI, RabbitMQ
 
 **Tasks:** Design and maintenance of a REST API. Integration of third-party data sources. Doing all sorts of small things with techs above.
 
 
-### Senior software developer – SCDM
+### Senior software developer - SCDM
 
-11.11.2014 – 11.11.2016
+11.11.2014 - 11.11.2016
 
 **Tech used:** Java as the main programming language. Java EE, Oracle RDBMS /PL SQL/, JSP
 
@@ -55,16 +55,16 @@
 
 ### Freelance every now and then
 
-01.09.2009 – 11.11.2014
+01.09.2009 - 11.11.2014
 
 **Tech used:** C#, C++, Objective-C, NSIS, MySQL
 
 **Tasks:** Employee DB /MySQL/ in C#. Chat module in Objective-C based on XMPP protocol /Facebook chat, GTalk, custom chat with configurable XMPP settings/. Media player with a 360 plugin based on VLC using QT and C++. Installer with crypto plugins in NSIS for the player.
 
 
-### Software developer – Hitegrity LLC
+### Software developer - Hitegrity LLC
 
-01.12.2007 – 01.09.2009
+01.12.2007 - 01.09.2009
 
 **Tech used:** C/C++ as the main programming languages /COM, DCOM/
 
@@ -73,7 +73,7 @@
 
 ### Software developer - WestSoft LTD
 
-01.07.2007 – 01.12.2007
+01.07.2007 - 01.12.2007
 
 **Tech used:** C++ as the main programming language /ATL, STL/, MySQL
 
@@ -113,6 +113,6 @@ I, then, continued my education at The National Academy of Sciences of Armenia i
 
 ## Languages
 
-* Armenian – native
-* Russian – advanced
-* English – upper-intermediate
+* Armenian - native
+* Russian - advanced
+* English - upper-intermediate
