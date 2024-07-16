@@ -8,13 +8,21 @@
 ## Career
 
 
-### Mid Scala engineer - [Dataart Armenia](https://www.dataart.com)
+### Senior Scala engineer - [DataArt Armenia](https://www.dataart.com)
 
-04.04.2022 - present
+04.04.2022 - 18.07.2024
 
 **Tech used:** Scala 2.13, Akka, Play, tAPIr, AWS SQS, IBM MQ, Cats
 
-**Tasks:** Miscellaneous․
+Overall I've spent about two years in two teams on a project in travel industry, automating reservation flows across multiple agents and elements.
+
+**Tasks:**
+
+I spent most of my time on the project in team 2 first as a **mid**, and then a **senior engineer**. My main contribution to the project was during time, building the module that would search plane tickets. I've managed to leave a coherent codebase and a repo. Through this experience I've learned that frequent demos calm the worried mind and help avoiding *dirty* estimates. The team had enough degree of freedom to experiment and we were able to agree on common notions of good and bad, so we were able to shape the project both technically /code style and structure, tooling, practices/ and process-wise /CI\CD, branching strategy, code review, .../.
+
+I, then, agreed to be the **team lead** of a team of five /team 1/ for three months. The team was in charge of several modules that were central to the whole operation, both semantically and topologically. To address some of the code issues, I was aiming to get *better code reviews* via pair programming and *clearer* information flow via a more inclusive requirement gathering. These, along with a few others, did not work out due to different socioeconomic reasons. The team was able to maintain a deliverable flow suiting current needs though.
+
+I spent the last two months mostly on maintenance, pairing with a colleague.
 
 
 ### Technical Trainer - Quality Testing Lab
