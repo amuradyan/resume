@@ -1,6 +1,6 @@
 # Andranik Muradyan
 
-[PDF (latest version)](https://amuradyan.github.io/resume/RESUME.pdf) |
+[PDF (latest version)](https://github.com/amuradyan/resume/blob/main/RESUME.pdf) |
 [github](https://github.com/amuradyan) |
 [email](mailto:muradianator@gmail.com) |
 [Yerevan, Armenia](https://www.openstreetmap.org/relation/364087#map=12/40.1614/44.5259)
