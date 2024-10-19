@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>About Me</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      background: linear-gradient(170deg, #F5E8C7, #ebbe72);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      position: relative;
+    }
+
+    .content {
+      text-align: left;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #333;
+      padding: 20px;
+      max-width: 800px;
+      width: 100%;
+      margin-left: 10%;
+    }
+
+    .content h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+
+    .content p {
+      line-height: 1.6;
+      margin-bottom: 1em;
+    }
+
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .github-icon {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+
+    .github-icon svg {
+      width: 40px;
+      height: 40px;
+      fill: #333;
+      transition: fill 0.3s;
+    }
+
+    .github-icon svg:hover {
+      fill: #0066cc;
+    }
+
+    .email {
+      font-family: monospace;
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
+    <h1>Hello</h1>
+
+    <p>
+      I am Andranik, a software engineer based in Yerevan, Armenia, with nearly two decades of programming experience.
+      My background is in computer science, and I am deeply interested in programming languages.
+    </p>
+
+    <p>
+      Most of my industry work is in fintech, although I've also worked in education and travel domains. <a
+        href="./projects.html">Projects</a>
+      spanned a variety of tools and languages, and I am now closer to /usually/ typed languages on VMs than the
+      system\hardware. Paired with my opinions on programming languages, that made me better with Scala over, say, Rust,
+      or Python over Go /I never got to use an ML language in production 😞/.
+    </p>
+
+    <p>
+      Through trial and error and personal experience, management-wise, I lean towards frequent demos over estimating,
+      pairing over reviews, and managing features over patches. I've noticed that better work is being produced when
+      working in such a fashion.
+    </p>
+
+    <p>
+      In my spare time, I've helped set up learning courses technically /GitHub and Google classrooms, infrastructure,
+      etc./ and content-wise. Every now and then, I'd work on a pet project in a language I was obsessed with at the
+      time /Clojure at the moment/, and once I tried my hand at <a href="https://github.com/haniravi/nito">hardware</a>.
+      On a random note, I've won the only <a
+        href="https://www.seasidestartupsummit.com/blog/nairi-insurance-is-the-first-sponsor-of-the-firecode-marathon">hackathon</a>
+      I ever participated in.
+    </p>
+
+    <p>
+      Generally, I'm interested in programming languages and their ways of describing systems, and lately, dynamic ones,
+      particularly Lisps, have caught my attention, which spilled into a <a href="https://github.com/amuradyan/sea">toy
+        Lisp implementation</a> to experiment with. I'm interested in building systems with dynamic languages to see
+      whether a tight enough test net can take over the type system responsibilities, including the semantics of the
+      latter that aids local reasoning.
+    </p>
+
+    <p>
+      If you'd like to drop me a line, you can do so at
+      <a class="email" href="mailto:andranik@amuradyan.am">
+        <b> andranik [at] amuradyan [dot] am</b>
+      </a>
+      .
+    </p>
+
+  </div>
+
+  <!-- GitHub Icon -->
+  <a href="https://github.com/amuradyan" class="github-icon" target="_blank" aria-label="GitHub">
+    <svg viewBox="0 0 16 16" version="1.1" aria-hidden="true">
+      <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47
+        7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49 0 0-2.01.37-2.44-.85
+        0 0-.36-.91-.88-1.15 0 0-.72-.49.05-.49 0 0 .78.05 1.19.8.69 1.19
+        1.81.85 2.25.65.07-.5.27-.85.49-1.05-1.78-.2-3.64-.89-3.64-3.95
+        0-.87.31-1.59.82-2.15-.08-.2-.36-1.01.08-2.11 0 0 .67-.21 2.2.82.64-.18
+        1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16
+        1.91.08 2.11.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.28.24.53.73.53
+        1.48 0 1.07-.01 1.93-.01 2.19 0 .21.15.46.55.38A8.013 8.013 0 0 0 16
+        8c0-4.42-3.58-8-8-8z">
+      </path>
+    </svg>
+  </a>
+
+</body>
+
+</html>
