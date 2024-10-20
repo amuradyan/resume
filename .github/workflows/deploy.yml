@@ -1,0 +1,26 @@
+name: Deploy homepage
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.html'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+
+      - name: Copy HTML Files via SCP
+        run: |
+          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa projects.html index.html ${{ secrets.USERNAME }}@${{ secrets.REMOTE_HOST }}:~/public_html/
