@@ -21,6 +21,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
-      - name: Copy HTML Files via SCP
+      - name: Move the files to the server
         run: |
           scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa homepage/projects.html homepage/index.html ${{ secrets.USERNAME }}@${{ secrets.REMOTE_HOST }}:~/public_html/

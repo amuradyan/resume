@@ -4,7 +4,6 @@
 <head>
   <title>About Me</title>
   <style>
-    /* Reset margins and paddings */
     html,
     body {
       margin: 0;
@@ -12,7 +11,6 @@
     }
 
     body {
-      /* Static background gradient */
       background: linear-gradient(170deg, #f7fdf7, #9df3bb);
       background-attachment: fixed;
     }
@@ -45,10 +43,8 @@
       text-decoration: underline;
     }
 
-    /* GitHub Icon Styling */
     .github-icon {
       position: fixed;
-      /* Fixes the icon in the viewport */
       bottom: 20px;
       right: 20px;
     }
@@ -69,12 +65,10 @@
       font-size: 1.2em;
     }
 
-    /* Adjustments for Mobile Devices */
     @media (max-width: 600px) {
       .content {
         padding: 15px;
         padding-bottom: 100px;
-        /* Extra space for larger icon */
       }
 
       .content h1 {
@@ -83,19 +77,16 @@
 
       .github-icon {
         bottom: 30px;
-        /* Adjust position if needed */
         right: 30px;
       }
 
       .github-icon svg {
         width: 90px;
-        /* Increased size */
         height: 90px;
       }
 
       .home-icon {
         bottom: 130px;
-        /* Adjust to maintain spacing on mobile */
       }
 
       .icon svg {
@@ -104,12 +95,10 @@
       }
     }
 
-    /* Positioning for the home icon */
     .home-icon {
       position: fixed;
       right: 20px;
       bottom: 90px;
-      /* Adjust the value as needed */
       fill: #333;
       transition: fill 0.3s;
     }
