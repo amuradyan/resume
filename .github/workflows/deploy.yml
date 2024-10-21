@@ -23,4 +23,4 @@ jobs:
 
       - name: Copy HTML Files via SCP
         run: |
-          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa projects.html index.html ${{ secrets.USERNAME }}@${{ secrets.REMOTE_HOST }}:~/public_html/
+          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa homepage/projects.html homepage/index.html ${{ secrets.USERNAME }}@${{ secrets.REMOTE_HOST }}:~/public_html/

@@ -13,7 +13,7 @@
 
     body {
       /* Static background gradient */
-      background: linear-gradient(170deg, #F5E8C7, #ebbe72);
+      background: linear-gradient(170deg, #f7fdf7, #9df3bb);
       background-attachment: fixed;
     }
 
@@ -92,6 +92,35 @@
         /* Increased size */
         height: 90px;
       }
+
+      .home-icon {
+        bottom: 130px;
+        /* Adjust to maintain spacing on mobile */
+      }
+
+      .icon svg {
+        width: 90px;
+        height: 90px;
+      }
+    }
+
+    /* Positioning for the home icon */
+    .home-icon {
+      position: fixed;
+      right: 20px;
+      bottom: 90px;
+      /* Adjust the value as needed */
+      fill: #333;
+      transition: fill 0.3s;
+    }
+
+    .home-icon:hover {
+      fill: #0066cc;
+    }
+
+    .home-icon svg {
+      width: 50px;
+      height: 50px;
     }
   </style>
 </head>
@@ -144,7 +173,12 @@
     </p>
   </div>
 
-  <!-- GitHub Icon -->
+  <a href="index.html" class="icon home-icon" aria-label="Home">
+    <svg viewBox="0 0 64 64" aria-hidden="true">
+      <path d="M32 12l22 22h-6v18h-12V38h-8v14H16V34h-6L32 12z" />
+    </svg>
+  </a>
+
   <a href="https://github.com/amuradyan" class="github-icon" target="_blank" aria-label="GitHub">
     <svg viewBox="0 0 16 16" version="1.1" aria-hidden="true">
       <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47
