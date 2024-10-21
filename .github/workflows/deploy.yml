@@ -23,4 +23,4 @@ jobs:
 
       - name: Move the files to the server
         run: |
-          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa homepage/*.html ${{ secrets.USERNAME }}@${{ secrets.REMOTE_HOST }}:~/public_html/
+          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa homepage/* ${{ secrets.USERNAME }}@${{ secrets.REMOTE_HOST }}:~/public_html/
