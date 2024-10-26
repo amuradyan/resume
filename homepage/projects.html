@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta charset="UTF-8">
   <title>Projects</title>
   <style>
     html,
@@ -9,9 +10,6 @@
       margin: 0;
       padding: 0;
       height: 100%;
-    }
-
-    body {
       background: #cbf3d9;
       background-attachment: fixed;
     }
@@ -146,6 +144,19 @@
       width: 100%;
       height: 100%;
     }
+
+    p.citation {
+      line-height: 0.5;
+      text-align: right;
+      font-style: italic;
+    }
+
+    p.ter-baghdasar {
+      line-height: 0.5;
+      text-align: right;
+      font-style: italic;
+      font-size: small;
+    }
   </style>
 </head>
 
@@ -207,11 +218,11 @@
 
     <h1>Projects</h1>
 
-    <h2>Senior Scala Engineer</h2>
+    <h2>Software Engineer in travel</h2>
 
     <p><em>April 2022 - July 2024</em></p>
 
-    <p><strong>Tech used:</strong> Scala 2.13, Akka, Play, tapir, AWS SQS, IBM MQ, Cats</p>
+    <p><strong>Tech used:</strong> Scala/2/, Akka, Play, tapir, AWS SQS, IBM MQ, Cats</p>
 
     <p>Overall I've spent about two years in two teams on a project in the travel industry, automating cruise
       reservation flows across multiple agents and elements.</p>
@@ -222,19 +233,18 @@
       able to affect our modules of the project both technically <em>/code style and structure, tooling, practices/</em>
       and process-wise <em>/CI\CD, branching strategy, code review, .../</em>.</p>
 
-    <p>Soon after, I took up the role of the <strong>team lead</strong> of a team of five <em>/team 1/</em> and led it
-      for three months. The team was in charge of several modules central to the operation, both semantically and
-      topologically. I tried to get <em>better code reviews</em> via pair programming and a <em>clearer</em> information
-      flow via more inclusive requirement gathering in an attempt to address system correctness issues. These, along
-      with a few other ideas, did not work out due to different socioeconomic reasons. Nevertheless, the team was able
-      to maintain a deliverable flow suiting the needs at the moment.</p>
+    <p>Soon after, I took up the role of the team lead of a team of five <em>/team 1/</em> and led it for three months.
+      The team was in charge of several modules central to the operation, both semantically and topologically. In order
+      to address the system correctness issues, I tried to achieve better code reviews via pair programming and a
+      clearer information flow via more inclusive requirement gathering. These, along with a few other ideas, did not
+      work out as planned due to different socioeconomic reasons. Nevertheless, the team was able to maintain a
+      deliverable flow suiting the needs at the moment.</p>
 
     <p>For the last two months, I've been primarily engaged in maintenance tasks, frequently collaborating with a
       colleague.</p>
 
-    <h2>Helping hands</h2>
+    <h2>Helping hands at a company</h2>
 
-    <p><em>01.03.2020 - 01.06.2022</em></p>
     <p><em>February 2020 - June 2022</em></p>
 
     <p><strong>Tech used:</strong> Java/8/ as the main programming language, SerenityBDD, Gherkin, Cucumber, Selenium,
@@ -251,28 +261,47 @@
     <p>I was also actively involved in training of employees by running a course, occasional tech discussions and
       closely working with two of of our juniors.</p>
 
-    <h2>Freelance</h2>
+    <h2>Freelancer in fintech</h2>
 
     <p><em>February 2018 - March 2020</em></p>
 
-    <p><strong>Tech used:</strong> Scala, Akka HTTP, MQL, JavaScript, Python, Cython</p>
+    <p><strong>Tech used:</strong> Scala/2/, Akka HTTP, MQL, JavaScript, Python, MariaDB</p>
 
-    <p><strong>Tasks:</strong> Design and implementation of the backend for a ticker data aggregator from different
-      MetaTrader4 vendors in Scala and MQL, processing Excel workbooks with financial data from different providers
-      /normalization, exporting to PDF/ in Python. Validation of a framework for testing collateralized loan obligations
-      and implementation of tests for CLOs in that framework.</p>
+    <p>This was my first paid project with Scala. The system was a hack to get ticker data out of MetaTrader platforms,
+      without having to pay for it. A concoction of ZeroMQ, MQL, Scala and a bit of redis/RESP/, it served the data as a
+      stream via sockets or a REST API. The system could communicate with several MetaTrader clones, added declaratively
+      through configs, and later incorporated a simple ledger and user management.</p>
 
-    <h2>Co-founder and Senior Developer - Praddicts CJSC</h2>
+    <p>The other two projects were in Python: an asset /CLO/ scoring software and an insurance financial data aggregator
+      and plotter. The former leveraged Cython for occasional performance tweaks.</p>
+
+    <h2>Engineer\Entrepreneur in betting</h2>
 
     <p><em>November 2016 - February 2018</em></p>
 
-    <p><strong>Tech used:</strong> Java as the main programming language, Scala, JavaScript. Spring, PostgreSQL,
+    <p class="citation">- Ոչ միայն հուզիչ էր, այլ նաև ուսուցողական։</p>
+    <p class="ter-baghdasar">Տեր Բաղդասար</p>
+    <br>
+
+    <p><strong>Tech used:</strong> Java, a bit of Scala and JavaScript, Spring, PostgreSQL,
       MongoDB, Apache Spark, Apache Kafka, JenkinsCI, RabbitMQ</p>
 
-    <p><strong>Tasks:</strong> Design and maintenance of a REST API. Integration of third-party data sources. Doing all
-      sorts of small things with techs above.</p>
+    <p>First of all, I hereby coin the term <i>engipreneur</i>. Now, to the story... </p>
 
-    <h2>Senior Software Developer - SCDM</h2>
+    <p>Me and a few friends had an idea of a social betting site with feed monetization. Mainly it was Spring with Java.
+      I got carried away with a specific tool with Spark and Scala, that would split the feed into streams, but was not
+      key to the operation. We managed to craft a prototype with basic social and feed splitting capabilities, received
+      an offer, and turned it down.</p>
+
+    <p>The lessons learned were more entrepreneurial than technological, however I had my
+      fair share of setting up pipelines, deployments and backups, configuring queues and databases, going through logs
+      and a bunch of other cool stuff.</p>
+
+
+
+
+
+    <h2>Software Engineer in fintech</h2>
 
     <p><em>November 2014 - November 2016</em></p>
 
@@ -281,36 +310,39 @@
     <p><strong>Tasks:</strong> Integration with a finmath library of a peculiar design. Integration with a number of
       asset-related data providers. Database design and development.</p>
 
-    <h2>Freelance Every Now and Then</h2>
 
-    <p><em>September 2009 - November 2014</em></p>
 
-    <p><strong>Tech used:</strong> C#, C++, Objective-C, NSIS, MySQL</p>
 
-    <p><strong>Tasks:</strong> Employee DB /MySQL/ in C#. Chat module in Objective-C based on XMPP protocol /Facebook
-      chat, GTalk, custom chat with configurable XMPP settings/. Media player with a 360 plugin based on VLC using QT
-      and C++. Installer with crypto plugins in NSIS for the player.</p>
 
-    <h2>Software Developer - Hitegrity LLC</h2>
+
+    <h2>Software Engineer infosec</h2>
 
     <p><em>December 2007 - September 2009</em></p>
 
     <p><strong>Tech used:</strong> C/C++ as the main programming languages /COM, DCOM/</p>
 
     <p><strong>Tasks:</strong> Porting OmniTrust Protected Browser project to 64 bit. Implementation of features such as
-      notes and highlighters for the editor of Castelle’s FaxPress project. Participated in the ProtectFile project for
+      notes and highlighters for the editor of Castelle's FaxPress project. Participated in the ProtectFile project for
       SafeNet-Inc.</p>
 
-    <h2>Software Developer - WestSoft LTD</h2>
+
+
+
+
+    <h2>Software Engineer in horeca</h2>
 
     <p><em>July 2007 - December 2007</em></p>
 
     <p><strong>Tech used:</strong> C++ as the main programming language /ATL, STL/, MySQL</p>
 
-    <p><strong>Tasks:</strong> Design and implementation of an ORM for MySQL/C++ for an ERP application /early stages/.
-      Library for custom report generation in rich text format.</p>
+    <p><strong>Tasks:</strong> Design and implementation of an ORM for MySQL/C++ for an ERP application /early
+      stages/. Library for custom report generation in rich text format.</p>
 
-    <h2>Software Developer - Smart-Tech LTD</h2>
+
+
+
+
+    <h2>Software Engineer in fintech</h2>
 
     <p><em>December 2006 - June 2007</em></p>
 
