@@ -1,7 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { useTheme } from '@mui/material/styles';
-import AppBar from '@mui/material/AppBar';
+import { styled, useTheme } from '@mui/material/styles';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
@@ -15,10 +14,10 @@ function TabPanel(props) {
 
   return (
     <div
-      role="tabpanel"
+      role="sections"
       hidden={value !== index}
-      id={`full-width-tabpanel-${index}`}
-      aria-labelledby={`full-width-tab-${index}`}
+      id={`section-${index}`}
+      aria-labelledby='sections-${index}'
       {...other}
     >
       {value === index && (
@@ -38,12 +37,18 @@ TabPanel.propTypes = {
 
 function a11yProps(index) {
   return {
-    id: `full-width-tab-${index}`,
-    'aria-controls': `full-width-tabpanel-${index}`,
+    id: `section-${index}`,
+    'aria-controls': `sections-${index}`,
   };
 }
 
-function FullWidthTabs() {
+const MyTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) => ({
+  textTransform: 'none',
+  fontWeight: theme.typography.fontWeightRegular,
+  fontSize: theme.typography.pxToRem(30)
+}));
+
+function Content() {
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
@@ -52,21 +57,18 @@ function FullWidthTabs() {
   };
 
   return (
-    <Box sx={{ bgcolor: 'background.green' }}>
-      <AppBar position="static">
-        <Tabs
-          value={value}
-          onChange={handleChange}
-          indicatorColor="secondary"
-          textColor="inherit"
-          variant="fullWidth"
-          aria-label="full width tabs example"
-        >
-          <Tab label="About me" {...a11yProps(0)} />
-          <Tab label="Projects" {...a11yProps(1)} />
-          <Tab label="Education" {...a11yProps(2)} />
-        </Tabs>
-      </AppBar>
+
+    <Box>
+      <Tabs
+        value={value}
+        onChange={handleChange}
+        variant="fullWidth"
+        indicatorColor="none"
+      >
+        <MyTab label="About me" {...a11yProps(0)} />
+        <MyTab label="Projects" {...a11yProps(1)} />
+        <MyTab label="Education" {...a11yProps(2)} />
+      </Tabs>
       <TabPanel value={value} index={0} dir={theme.direction}>
         <AboutMe />
       </TabPanel>
@@ -80,12 +82,12 @@ function FullWidthTabs() {
   );
 }
 
-function App() {
+function Homepage() {
   return (
     <div style={{ background: '#cbf3d9' }}>
-      <FullWidthTabs />
+      <Content />
     </div>
   );
 }
 
-export default App;
+export default Homepage;

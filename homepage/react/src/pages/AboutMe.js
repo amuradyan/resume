@@ -3,16 +3,16 @@ function AboutMe(params) {
     <div>
       <p>
         I am Andranik, a software engineer based in Yerevan, Armenia, with nearly two decades of programming experience.
-        My <a href="./background.html">background</a> is in computer science, and I am deeply interested in programming
-        languages. I've learned some Czech during my studies abroad and speak Armenian, English, and Russian.
+        My background is in computer science, and I am deeply interested in programming languages. I've learned some Czech
+        during my studies abroad and speak Armenian, English, and Russian.
       </p>
 
       <p>
-        Most of my industry work is in fintech, although I've also worked in education and travel domains.&nbsp;
-        <a href="./projects.html">Projects</a> spanned a variety of tools and languages, and I am now closer to
-        /usually/ typed languages on VMs than the system\hardware. Paired with my opinions on programming languages,
-        that made me better with Scala over, say, Rust, or Python over Go /I never got to use an ML language in production
-        &#128532;/.
+        Most of my industry work is in fintech, although I've also worked in education and travel domains. Projects spanned
+        a variety of tools and languages, and I am now closer to /usually/ typed languages on VMs than the system\hardware.
+        Paired with my opinions on programming languages, that made me better with Scala over, say, Rust, or Python over Go
+        /I never got to use an ML language in production
+        😔/.
       </p>
 
       <p>
