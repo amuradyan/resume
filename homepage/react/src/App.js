@@ -59,7 +59,12 @@ function Content() {
 
   return (
 
-    <Box>
+    <Box sx={{
+      width: '80%',
+      marginTop: '5%',
+      marginLeft: '10%',
+      marginRight: '10%',
+    }}>
       <Tabs
         value={value}
         onChange={handleChange}
