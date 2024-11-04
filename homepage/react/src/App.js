@@ -1,10 +1,11 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
-import { styled, useTheme } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
+
 import AboutMe from './pages/AboutMe';
 import Education from './pages/Education';
 import Projects from './pages/Projects';
@@ -49,7 +50,7 @@ const MyTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) =>
 }));
 
 function Content() {
-  const theme = useTheme();
+  // const theme = useTheme();
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -69,13 +70,13 @@ function Content() {
         <MyTab label="Projects" {...a11yProps(1)} />
         <MyTab label="Education" {...a11yProps(2)} />
       </Tabs>
-      <TabPanel value={value} index={0} dir={theme.direction}>
+      <TabPanel value={value} index={0}>
         <AboutMe />
       </TabPanel>
-      <TabPanel value={value} index={1} dir={theme.direction}>
+      <TabPanel value={value} index={1}>
         <Projects />
       </TabPanel>
-      <TabPanel value={value} index={2} dir={theme.direction}>
+      <TabPanel value={value} index={2}>
         <Education />
       </TabPanel>
     </Box>

@@ -42,7 +42,7 @@ function AboutMe(params) {
         If you'd like to drop me a line, you can do so at&nbsp;
         <a class="email" href="mailto:andranik@amuradyan.am">
           <b>andranik [at] amuradyan [dot] am</b>
-        </a>, or check out my <a href="github.com/amuradyan"><b>GitHub</b></a>.
+        </a>, or check out my <a href="http://github.com/amuradyan"><b>GitHub</b></a>.
       </p>
     </div >
   )
