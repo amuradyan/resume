@@ -90,7 +90,7 @@ function Content() {
 
 function Homepage() {
   return (
-    <div style={{ background: '#cbf3d9' }}>
+    <div>
       <Content />
     </div>
   );
