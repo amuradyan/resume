@@ -2,6 +2,7 @@ import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
+import Chip from '@mui/material/Chip';
 import { Typography, Link } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
@@ -29,13 +30,11 @@ function Projects() {
         when="half a year ago"
         fullDescription={
           <>
-            {/* <Typography variant="body2">
-              <em>April 2022 - July 2024</em>
-            </Typography> */}
             <Typography>
               Overall I've spent about two years in two teams on a project in the travel industry, automating cruise
               reservation flows across multiple agents and elements.
             </Typography>
+            <br />
             <Typography>
               My main contribution to the project was a module to search plane tickets. I've managed to maintain a
               well-tested and coherent codebase and a structured repository, and learned that frequent demos calm the
@@ -44,21 +43,25 @@ function Projects() {
               <em>/code style and structure, tooling, practices/</em> and process-wise{' '}
               <em>/CI\CD, branching strategy, code review, .../</em>.
             </Typography>
+            <br />
             <Typography>
               Soon after, I took up the role of the team lead of a team of five <em>/team 1/</em> and led it for three
               months. The team was in charge of several modules central to the operation, both semantically and
               topologically. In order to address the system correctness issues, I tried to achieve better code reviews
               via pair programming and a clearer information flow via more inclusive requirement gathering. These, along
               with a few other ideas, did not work out as planned due to different socioeconomic reasons. Nevertheless,
-              the team was able to maintain a deliverable flow suiting the needs at the moment.
+              the team was able to maintain a deliverable flow suiting the needs at the moment. Closer to the end, I've
+              been primarily engaged in maintenance tasks, mentoring a junior colleague.
             </Typography>
-            <Typography>
-              For the last two months, I've been primarily engaged in maintenance tasks, frequently collaborating with a
-              colleague.
-            </Typography>
-            <Typography>
-              <strong>Tech:</strong> Scala/2/, Akka, Play, tapir, AWS SQS, IBM MQ, Cats
-            </Typography>
+            <br />
+
+            <Chip size="small" label="Scala/2/" />
+            <Chip size="small" label="Akka" />
+            <Chip size="small" label="Play" />
+            <Chip size="small" label="tapir" />
+            <Chip size="small" label="AWS SQS" />
+            <Chip size="small" label="IBM MQ" />
+            <Chip size="small" label="Cats" />
           </>
         }
       />
@@ -68,9 +71,6 @@ function Projects() {
         when="~ 2 years ago"
         fullDescription={
           <>
-            {/* <Typography variant="body2">
-              <em>February 2020 - June 2022</em>
-            </Typography> */}
             <Typography>
               My main responsibility, along with my junior colleague, was automating e2e tests for a number of online
               shops dealing in all sorts of goods from wines to car parts. I started with simple Selenium tests and
@@ -80,13 +80,19 @@ function Projects() {
               like splitting it further. Tests would run on different platforms and browsers with the help of
               Browserstack.
             </Typography>
+            <br />
             <Typography>
               I was also actively involved in training of employees by running a course, occasional tech discussions, and
               closely working with two of our juniors.
             </Typography>
-            <Typography>
-              <strong>Tech:</strong> Java/8/, Gherkin, SerenityBDD, Cucumber, Selenium, Browserstack
-            </Typography>
+            <br />
+
+            <Chip size="small" label="Java/8/" />
+            <Chip size="small" label="Gherkin" />
+            <Chip size="small" label="SerenityBDD" />
+            <Chip size="small" label="Cucumber" />
+            <Chip size="small" label="Selenium" />
+            <Chip size="small" label="Browserstack" />
           </>
         }
       />
@@ -96,9 +102,6 @@ function Projects() {
         when="~ 4 years ago"
         fullDescription={
           <>
-            {/* <Typography variant="body2">
-              <em>February 2018 - March 2020</em>
-            </Typography> */}
             <Typography>
               This was my first paid project with Scala. The system was a hack to get ticker data out of MetaTrader
               platforms, without having to pay for it. A concoction of ZeroMQ, MQL, Scala and a bit of redis/RESP/, it
@@ -106,13 +109,18 @@ function Projects() {
               MetaTrader clones, added declaratively through configs, and later incorporated a simple ledger and user
               management.
             </Typography>
+            <br />
             <Typography>
               The other two projects were in Python: an asset /CLO/ scoring software and an insurance financial data
               aggregator and plotter. The former leveraged Cython for occasional performance tweaks.
             </Typography>
-            <Typography>
-              <strong>Tech:</strong> Scala/2/, Akka HTTP, MQL, JavaScript, Python, MariaDB
-            </Typography>
+            <br />
+            <Chip size="small" label="Scala/2/" />
+            <Chip size="small" label="Akka HTTP" />
+            <Chip size="small" label="MQL" />
+            <Chip size="small" label="JavaScript" />
+            <Chip size="small" label="Python" />
+            <Chip size="small" label="MariaDB" />
           </>
         }
       />
@@ -122,9 +130,6 @@ function Projects() {
         when="~ 6 years ago"
         fullDescription={
           <>
-            {/* <Typography variant="body2">
-              <em>November 2016 - February 2018</em>
-            </Typography> */}
             <Typography
               variant="body1"
               sx={{ fontStyle: 'italic', textAlign: 'right' }}
@@ -137,24 +142,35 @@ function Projects() {
             >
               Տեր Բաղդասար
             </Typography>
+            <br />
             <Typography>
               First of all, I hereby coin the term <i>engipreneur</i>. Now, to the story...
             </Typography>
+            <br />
             <Typography>
               Me and a few friends had an idea of a social betting site with feed monetization. Mainly it was Spring
               with Java. I got carried away with a specific tool with Spark and Scala, that would split the feed into
               streams, but was not key to the operation. We managed to craft a prototype with basic social and feed
               splitting capabilities, received an offer, and turned it down.
             </Typography>
+            <br />
             <Typography>
               The lessons learned were more entrepreneurial than technological, however I had my fair share of setting up
               pipelines, deployments and backups, configuring queues and databases, going through logs, and a bunch of
               other cool stuff.
             </Typography>
-            <Typography>
-              <strong>Tech:</strong> Java, a bit of Scala and JavaScript, Spring, PostgreSQL, MongoDB, Apache Spark,
-              Apache Kafka, JenkinsCI, RabbitMQ
-            </Typography>
+            <br />
+
+            <Chip size="small" label="Java" />
+            <Chip size="small" label="Scala" />
+            <Chip size="small" label="JavaScript" />
+            <Chip size="small" label="Spring" />
+            <Chip size="small" label="PostgreSQL" />
+            <Chip size="small" label="MongoDB" />
+            <Chip size="small" label="Apache Spark" />
+            <Chip size="small" label="Apache Kafka" />
+            <Chip size="small" label="JenkinsCI" />
+            <Chip size="small" label="RabbitMQ" />
           </>
         }
       />
@@ -164,26 +180,28 @@ function Projects() {
         when="~ 8 years ago"
         fullDescription={
           <>
-            {/* <Typography variant="body2">
-              <em>November 2014 - November 2016</em>
-            </Typography> */}
             <Typography>
               In order to valuate securities, the system was processing data from three sources of, naturally, different
               formats, and dissipating the calculations on the aggregation of the former. It was developed and launched
               on the cloud, and was moved on premises soon after.
             </Typography>
+            <br />
             <Typography>
               My main contribution was inflation bonds valuation, integrating with a finmath library of a peculiar
               design. I also got to make a helpful UI tool for just asset valuation, utilizing spreadsheets.
             </Typography>
+            <br />
             <Typography>
               I should specifically mention the degree of our close work with the client. The domain was pretty deep and
-              intricate, and frequent flights to Frankfurt were not extremely helpful in understanding and modeling the
-              domain, but also rather enjoyable.
+              intricate, and frequent flights to Frankfurt were not only extremely helpful in understanding and modeling
+              the domain, but also rather enjoyable.
             </Typography>
-            <Typography>
-              <strong>Tech:</strong> Java EE, Oracle DB, JSP, AWS
-            </Typography>
+            <br />
+
+            <Chip size="small" label="Java EE" />
+            <Chip size="small" label="Oracle DB" />
+            <Chip size="small" label="JSP" />
+            <Chip size="small" label="AWS" />
           </>
         }
       />
@@ -198,13 +216,18 @@ function Projects() {
               and implementing such a system—JDEECo. I was responsible for the scheduler or the clock of the system, and
               got to code a vehicle routing demo later on.
             </Typography>
+            <br />
             <Typography>
               My main focus, however, was on an external DSL for system definition, that would translate to Java and get
               SAT checked.
             </Typography>
-            <Typography>
-              <strong>Tech:</strong> Java, Xtext, Xtend, EMF, Alloy /relational modeling language/
-            </Typography>
+            <br />
+
+            <Chip size="small" label="Java" />
+            <Chip size="small" label="Xtext" />
+            <Chip size="small" label="Xtend" />
+            <Chip size="small" label="EMF" />
+            <Chip size="small" label="Alloy" />
           </>
         }
       />
@@ -214,18 +237,16 @@ function Projects() {
         when="~ 14 years ago"
         fullDescription={
           <>
-            {/* <Typography variant="body2">
-              <em>December 2007 - September 2009</em>
-            </Typography> */}
             <Typography>
               Nothing particularly interesting happened during this time. The products were infosec tools, so I got to
               code a browser watermarking extension and a file system encryption tool. I'd say I mainly got to exercise
               my C/C++ and some cryptography skills. The exercise made clear to me that I do enjoy these languages as
               much, so I used them less and less with time, and they were replaced in my toolkit.
             </Typography>
-            <Typography>
-              <strong>Tech:</strong> C/C++, cryptographic algorithms
-            </Typography>
+            <br />
+
+            <Chip size="small" label="C/C++" />
+            <Chip size="small" label="cryptographic algorithms" />
           </>
         }
       />
@@ -235,9 +256,6 @@ function Projects() {
         when="more than 15 years ago"
         fullDescription={
           <>
-            {/* <Typography variant="body2">
-              <em>July 2007 - December 2007</em>
-            </Typography> */}
             <Typography>
               The product was an ERP system for restaurants on Windows, so I also got to code some UI with Borland. From
               what's worth noting, two things come to mind. One is an ORM, which me and a senior colleague implemented
@@ -245,9 +263,10 @@ function Projects() {
               separate product. The second one was a reporting library in rich text. It was a simple tool that could do
               cells and some styles, but I remember enjoying it a lot.
             </Typography>
-            <Typography>
-              <strong>Tech:</strong> Borland C++, MySQL
-            </Typography>
+            <br />
+
+            <Chip size="small" label="Borland C++" />
+            <Chip size="small" label="MySQL" />
           </>
         }
       />
@@ -257,18 +276,17 @@ function Projects() {
         when="more than 15 years ago"
         fullDescription={
           <>
-            {/* <Typography variant="body2">
-              <em>December 2006 - June 2007</em>
-            </Typography> */}
             <Typography>
               I am glad I got this as my first job. We were integrating local banks with the local v-card system,
               nothing special there, but what was special was that I got to use an interesting language and an ecosystem.
               We were coding in Erlang, running on BSDs with window managers and vims and a bunch of other cool stuff.
               That was fun, and rather fortunate for someone who was just starting their career.
             </Typography>
-            <Typography>
-              <strong>Tech:</strong> Erlang, Mnesia, Yaws
-            </Typography>
+            <br />
+
+            <Chip size="small" label="Erlang" />
+            <Chip size="small" label="Mnesia" />
+            <Chip size="small" label="Yaws" />
           </>
         }
       />
