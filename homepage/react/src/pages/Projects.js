@@ -39,9 +39,8 @@ function Projects() {
               My main contribution to the project was a module to search plane tickets. I've managed to maintain a
               well-tested and coherent codebase and a structured repository, and learned that frequent demos calm the
               worried mind and help avoiding <em>dirty</em> estimates. Our team was able to experiment and agree on
-              what's good or bad, so we were able to affect our modules of the project both technically{' '}
-              <em>/code style and structure, tooling, practices/</em> and process-wise{' '}
-              <em>/CI\CD, branching strategy, code review, .../</em>.
+              what's good or bad, so we were able to affect our modules of the project both technically <em>/code style
+                and structure, tooling, practices/</em> and process-wise <em>/CI\CD, branching strategy, code review, .../</em>.
             </Typography>
             <br />
             <Typography>
@@ -55,13 +54,13 @@ function Projects() {
             </Typography>
             <br />
 
-            <Chip size="small" label="Scala/2/" />
-            <Chip size="small" label="Akka" />
-            <Chip size="small" label="Play" />
-            <Chip size="small" label="tapir" />
-            <Chip size="small" label="AWS SQS" />
-            <Chip size="small" label="IBM MQ" />
-            <Chip size="small" label="Cats" />
+            <Chip color="info" variant="outlined" size="small" label="Scala/2/" />
+            <Chip color="info" variant="outlined" size="small" label="Akka" />
+            <Chip color="info" variant="outlined" size="small" label="Play" />
+            <Chip color="info" variant="outlined" size="small" label="tapir" />
+            <Chip color="info" variant="outlined" size="small" label="AWS SQS" />
+            <Chip color="info" variant="outlined" size="small" label="IBM MQ" />
+            <Chip color="info" variant="outlined" size="small" label="Cats" />
           </>
         }
       />
@@ -75,7 +74,7 @@ function Projects() {
               My main responsibility, along with my junior colleague, was automating e2e tests for a number of online
               shops dealing in all sorts of goods from wines to car parts. I started with simple Selenium tests and
               gradually moved to SerenityBDD. In 2 major rehauls along the way, the layers settled and the system
-              developed a comfortable library of steps, which led to tickets in Jira becoming either 1 or 2{' '}
+              developed a comfortable library of steps, which led to tickets in Jira becoming either 1 or 2
               <Link href="https://estimation.lunarlogic.io/">points</Link>. The latter case was due to us not feeling
               like splitting it further. Tests would run on different platforms and browsers with the help of
               Browserstack.
@@ -87,18 +86,18 @@ function Projects() {
             </Typography>
             <br />
 
-            <Chip size="small" label="Java/8/" />
-            <Chip size="small" label="Gherkin" />
-            <Chip size="small" label="SerenityBDD" />
-            <Chip size="small" label="Cucumber" />
-            <Chip size="small" label="Selenium" />
-            <Chip size="small" label="Browserstack" />
+            <Chip color="info" variant="outlined" size="small" label="Java/8/" />
+            <Chip color="info" variant="outlined" size="small" label="Gherkin" />
+            <Chip color="info" variant="outlined" size="small" label="SerenityBDD" />
+            <Chip color="info" variant="outlined" size="small" label="Cucumber" />
+            <Chip color="info" variant="outlined" size="small" label="Selenium" />
+            <Chip color="info" variant="outlined" size="small" label="Browserstack" />
           </>
         }
       />
 
       <ProjectItem
-        title="Freelancer in fintech"
+        title="Software engineer in fintech"
         when="~ 4 years ago"
         fullDescription={
           <>
@@ -115,12 +114,12 @@ function Projects() {
               aggregator and plotter. The former leveraged Cython for occasional performance tweaks.
             </Typography>
             <br />
-            <Chip size="small" label="Scala/2/" />
-            <Chip size="small" label="Akka HTTP" />
-            <Chip size="small" label="MQL" />
-            <Chip size="small" label="JavaScript" />
-            <Chip size="small" label="Python" />
-            <Chip size="small" label="MariaDB" />
+            <Chip color="info" variant="outlined" size="small" label="Scala/2/" />
+            <Chip color="info" variant="outlined" size="small" label="Akka HTTP" />
+            <Chip color="info" variant="outlined" size="small" label="MQL" />
+            <Chip color="info" variant="outlined" size="small" label="JavaScript" />
+            <Chip color="info" variant="outlined" size="small" label="Python" />
+            <Chip color="info" variant="outlined" size="small" label="MariaDB" />
           </>
         }
       />
@@ -161,16 +160,16 @@ function Projects() {
             </Typography>
             <br />
 
-            <Chip size="small" label="Java" />
-            <Chip size="small" label="Scala" />
-            <Chip size="small" label="JavaScript" />
-            <Chip size="small" label="Spring" />
-            <Chip size="small" label="PostgreSQL" />
-            <Chip size="small" label="MongoDB" />
-            <Chip size="small" label="Apache Spark" />
-            <Chip size="small" label="Apache Kafka" />
-            <Chip size="small" label="JenkinsCI" />
-            <Chip size="small" label="RabbitMQ" />
+            <Chip color="info" variant="outlined" size="small" label="Java" />
+            <Chip color="info" variant="outlined" size="small" label="Scala" />
+            <Chip color="info" variant="outlined" size="small" label="JavaScript" />
+            <Chip color="info" variant="outlined" size="small" label="Spring" />
+            <Chip color="info" variant="outlined" size="small" label="PostgreSQL" />
+            <Chip color="info" variant="outlined" size="small" label="MongoDB" />
+            <Chip color="info" variant="outlined" size="small" label="Apache Spark" />
+            <Chip color="info" variant="outlined" size="small" label="Apache Kafka" />
+            <Chip color="info" variant="outlined" size="small" label="JenkinsCI" />
+            <Chip color="info" variant="outlined" size="small" label="RabbitMQ" />
           </>
         }
       />
@@ -198,10 +197,10 @@ function Projects() {
             </Typography>
             <br />
 
-            <Chip size="small" label="Java EE" />
-            <Chip size="small" label="Oracle DB" />
-            <Chip size="small" label="JSP" />
-            <Chip size="small" label="AWS" />
+            <Chip color="info" variant="outlined" size="small" label="Java EE" />
+            <Chip color="info" variant="outlined" size="small" label="Oracle DB" />
+            <Chip color="info" variant="outlined" size="small" label="JSP" />
+            <Chip color="info" variant="outlined" size="small" label="AWS" />
           </>
         }
       />
@@ -223,11 +222,11 @@ function Projects() {
             </Typography>
             <br />
 
-            <Chip size="small" label="Java" />
-            <Chip size="small" label="Xtext" />
-            <Chip size="small" label="Xtend" />
-            <Chip size="small" label="EMF" />
-            <Chip size="small" label="Alloy" />
+            <Chip color="info" variant="outlined" size="small" label="Java" />
+            <Chip color="info" variant="outlined" size="small" label="Xtext" />
+            <Chip color="info" variant="outlined" size="small" label="Xtend" />
+            <Chip color="info" variant="outlined" size="small" label="EMF" />
+            <Chip color="info" variant="outlined" size="small" label="Alloy" />
           </>
         }
       />
@@ -245,8 +244,8 @@ function Projects() {
             </Typography>
             <br />
 
-            <Chip size="small" label="C/C++" />
-            <Chip size="small" label="cryptographic algorithms" />
+            <Chip color="info" variant="outlined" size="small" label="C/C++" />
+            <Chip color="info" variant="outlined" size="small" label="cryptographic algorithms" />
           </>
         }
       />
@@ -265,8 +264,8 @@ function Projects() {
             </Typography>
             <br />
 
-            <Chip size="small" label="Borland C++" />
-            <Chip size="small" label="MySQL" />
+            <Chip color="info" variant="outlined" size="small" label="Borland C++" />
+            <Chip color="info" variant="outlined" size="small" label="MySQL" />
           </>
         }
       />
@@ -284,9 +283,9 @@ function Projects() {
             </Typography>
             <br />
 
-            <Chip size="small" label="Erlang" />
-            <Chip size="small" label="Mnesia" />
-            <Chip size="small" label="Yaws" />
+            <Chip color="info" variant="outlined" size="small" label="Erlang" />
+            <Chip color="info" variant="outlined" size="small" label="Mnesia" />
+            <Chip color="info" variant="outlined" size="small" label="Yaws" />
           </>
         }
       />
