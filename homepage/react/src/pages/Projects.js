@@ -10,7 +10,7 @@ function ProjectItem({ title, when, fullDescription }) {
   const [expanded, setExpanded] = React.useState(false);
 
   return (
-    <Accordion expanded={expanded} onChange={() => setExpanded(!expanded)}>
+    <Accordion expanded={expanded} onChange={() => setExpanded(!expanded)} sx={{ marginBottom: 1 }}>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <Typography variant="h6" sx={{ width: '80%', flexShrink: 0 }}>{title}</Typography>
         <Typography sx={{ color: 'text.secondary' }}>{when}</Typography>
