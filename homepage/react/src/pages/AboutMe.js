@@ -39,6 +39,17 @@ function AboutMe(params) {
       </p>
 
       <p>
+        In my early years of studying I was interested in cryptography and information theory, which I still find fascinating.
+        During my PhD years in Charles University in Prague, I took courses in modern programming languages, embedded systems,
+        and system behavior models and verification, but my research was about formal expression and verification /DSL/ of a
+        component-based systems.
+      </p>
+
+      <p>
+        If you'd like a dense version this in a PDF format, you can find it <a href="https://amuradyan.am/RESUME.pdf">here</a>.
+      </p>
+
+      <p>
         If you'd like to drop me a line, you can do so at&nbsp;
         <a class="email" href="mailto:andranik@amuradyan.am">
           <b>andranik [at] amuradyan [dot] am</b>
