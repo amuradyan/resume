@@ -14,7 +14,7 @@ function Tech({ tech }) {
   )
 }
 
-function Summary({ expanded, onClick, title, when }) {
+function Summary({ onClick, title, when }) {
   return (
     <Box onClick={onClick}
       sx={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', paddingBottom: 1 }}>
@@ -54,13 +54,12 @@ function Project({ title, when, story, tools }) {
 
   const toolList = tools.split(',').map(t => t.trim());
 
-  const toggleSize = () => {
-    setExpanded(!expanded);
-  }
+  const toggleSize =
+    () => { setExpanded(!expanded); }
 
   return (
     <Box sx={{ border: '1px solid #ddd', marginBottom: 2, padding: 2 }}>
-      <Summary expanded={expanded} onClick={toggleSize} title={title} when={when} />
+      <Summary title={title} when={when} onClick={toggleSize} />
       <Divider sx={{ marginBottom: 2 }} />
       <Story expanded={expanded} story={story} />
       <Tech tech={{ toolList }} />
