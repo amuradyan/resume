@@ -103,7 +103,7 @@ For the last two months, I've been primarily engaged in maintenance tasks, frequ
 2013-2014
 
 **Courses:** Concepts of Modern Programming Languages /Groovy, Scala, Io, …/, Embedded and Real-Time Systems /RTEMS/, System Behavior Models and Verification /PROMELA, NuSMV/
-W
+
 #### Projects during PhD
 
 **Tech used:** Java, Xtext, Xtend, EMF, Alloy /relational modeling language/
