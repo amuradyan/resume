@@ -1,34 +1,100 @@
 import * as React from 'react';
 import Accordion from '@mui/material/Accordion';
+import Divider from '@mui/material/Divider';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import Chip from '@mui/material/Chip';
-import { Typography, Link } from '@mui/material';
+import { Typography, Link, Box } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function ProjectItem({ title, when, fullDescription }) {
   const [expanded, setExpanded] = React.useState(false);
 
   return (
-    <Accordion expanded={expanded} onChange={() => setExpanded(!expanded)} sx={{ marginBottom: 1 }}>
+    <Accordion expanded={expanded} onChange={() => setExpanded(!expanded)} sx={{ marginBottom: 0.5 }}>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <Typography variant="h6" sx={{ width: '80%', flexShrink: 0 }}>{title}</Typography>
         <Typography sx={{ color: 'text.secondary' }}>{when}</Typography>
-
       </AccordionSummary>
       <AccordionDetails>{fullDescription}</AccordionDetails>
     </Accordion>
   );
 }
 
+function Tech({ tech }) {
+  const toolTags =
+    tech.toolList.map((tool) => <Chip color="info" variant="outlined" size="small" label={tool} />)
+
+  return (
+    <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.5 }}>
+      {toolTags}
+    </Box>
+  )
+}
+
+function Summary({ expanded, onClick, title, when }) {
+  return (
+    <Box onClick={onClick}
+      sx={{ cursor: 'pointer', display: 'flex', justifyContent: 'space-between', paddingBottom: 1 }}>
+      <Typography variant="h6">{title}</Typography>
+      <Typography sx={{ color: 'text.secondary' }}>{when}</Typography>
+    </Box >
+  );
+}
+
+function Story({ expanded, story }) {
+  return (
+    expanded ?
+      <Box sx={{ marginBottom: 1 }}>
+        <Typography>{story}</Typography>
+      </Box> :
+      <Box sx={{
+        overflow: 'hidden',
+        height: '120px',
+        marginBottom: 1,
+        position: 'relative',
+        '&::after': {
+          content: '""',
+          position: 'absolute',
+          bottom: 0,
+          width: '100%',
+          height: '120px',
+          background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0), white)',
+        }
+      }}>
+        <Typography>{story}</Typography>
+      </Box >
+  );
+}
+
+
+function Project({ title, when, story, tools }) {
+  const [expanded, setExpanded] = React.useState(false);
+
+  const toolList = tools.split(',').map(t => t.trim());
+
+  const toggleSize = () => {
+    setExpanded(!expanded);
+  }
+
+  return (
+    <Box sx={{ border: '1px solid #ddd', marginBottom: 2, padding: 2 }}>
+      <Summary expanded={expanded} onClick={toggleSize} title={title} when={when} />
+      <Divider sx={{ marginBottom: 2 }} />
+      <Story expanded={expanded} story={story} />
+      <Tech tech={{ toolList }} />
+    </Box>
+  );
+}
 
 function Projects() {
   return (
     <div>
-      <ProjectItem
+      <Project
         title="Software Engineer in travel"
         when="half a year ago"
-        fullDescription={
+        tools="Scala/2/, Akka, Play, tapir, AWS SQS, IBM MQ, Cats"
+        story={
           <>
             <Typography>
               Overall I've spent about two years in two teams on a project in the travel industry, automating cruise
@@ -53,14 +119,6 @@ function Projects() {
               been primarily engaged in maintenance tasks, mentoring a junior colleague.
             </Typography>
             <br />
-
-            <Chip color="info" variant="outlined" size="small" label="Scala/2/" />
-            <Chip color="info" variant="outlined" size="small" label="Akka" />
-            <Chip color="info" variant="outlined" size="small" label="Play" />
-            <Chip color="info" variant="outlined" size="small" label="tapir" />
-            <Chip color="info" variant="outlined" size="small" label="AWS SQS" />
-            <Chip color="info" variant="outlined" size="small" label="IBM MQ" />
-            <Chip color="info" variant="outlined" size="small" label="Cats" />
           </>
         }
       />
