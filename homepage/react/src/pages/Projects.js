@@ -27,13 +27,13 @@ function Summary({ onClick, title, when }) {
 function Story({ expanded, story }) {
   return (
     expanded ?
-      <Box sx={{ marginBottom: 1 }}>
+      <Box sx={{ marginBottom: 2 }}>
         <Typography>{story}</Typography>
       </Box> :
       <Box sx={{
         overflow: 'hidden',
         height: '100px',
-        marginBottom: 1,
+        marginBottom: 2,
         position: 'relative',
         '&::after': {
           content: '""',

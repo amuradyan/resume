@@ -46,7 +46,7 @@ function AboutMe(params) {
       </p>
 
       <p>
-        If you'd like a dense version this in a PDF format, you can find it <a href="https://amuradyan.am/RESUME.pdf">here</a>.
+        If you'd like a dense version of my bio and projects in a PDF format, you can find it <a href="https://amuradyan.am/RESUME.pdf">here</a>.
       </p>
 
       <p>
