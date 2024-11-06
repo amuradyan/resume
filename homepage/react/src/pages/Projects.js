@@ -1,25 +1,7 @@
 import * as React from 'react';
-import Accordion from '@mui/material/Accordion';
 import Divider from '@mui/material/Divider';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
 import Chip from '@mui/material/Chip';
 import { Typography, Link, Box } from '@mui/material';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-function ProjectItem({ title, when, fullDescription }) {
-  const [expanded, setExpanded] = React.useState(false);
-
-  return (
-    <Accordion expanded={expanded} onChange={() => setExpanded(!expanded)} sx={{ marginBottom: 0.5 }}>
-      <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <Typography variant="h6" sx={{ width: '80%', flexShrink: 0 }}>{title}</Typography>
-        <Typography sx={{ color: 'text.secondary' }}>{when}</Typography>
-      </AccordionSummary>
-      <AccordionDetails>{fullDescription}</AccordionDetails>
-    </Accordion>
-  );
-}
 
 function Tech({ tech }) {
   const toolTags =
@@ -50,7 +32,7 @@ function Story({ expanded, story }) {
       </Box> :
       <Box sx={{
         overflow: 'hidden',
-        height: '120px',
+        height: '100px',
         marginBottom: 1,
         position: 'relative',
         '&::after': {
@@ -58,7 +40,7 @@ function Story({ expanded, story }) {
           position: 'absolute',
           bottom: 0,
           width: '100%',
-          height: '120px',
+          height: '100px',
           background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0), white)',
         }
       }}>
@@ -66,7 +48,6 @@ function Story({ expanded, story }) {
       </Box >
   );
 }
-
 
 function Project({ title, when, story, tools }) {
   const [expanded, setExpanded] = React.useState(false);
@@ -118,15 +99,15 @@ function Projects() {
               the team was able to maintain a deliverable flow suiting the needs at the moment. Closer to the end, I've
               been primarily engaged in maintenance tasks, mentoring a junior colleague.
             </Typography>
-            <br />
           </>
         }
       />
 
-      <ProjectItem
+      <Project
         title="Helping hands at a testing company"
         when="~ 2 years ago"
-        fullDescription={
+        tools="Java/8/, Gherkin, SerenityBDD, Cucumber, Selenium, Browserstack"
+        story={
           <>
             <Typography>
               My main responsibility, along with my junior colleague, was automating e2e tests for a number of online
@@ -142,22 +123,15 @@ function Projects() {
               I was also actively involved in training of employees by running a course, occasional tech discussions, and
               closely working with two of our juniors.
             </Typography>
-            <br />
-
-            <Chip color="info" variant="outlined" size="small" label="Java/8/" />
-            <Chip color="info" variant="outlined" size="small" label="Gherkin" />
-            <Chip color="info" variant="outlined" size="small" label="SerenityBDD" />
-            <Chip color="info" variant="outlined" size="small" label="Cucumber" />
-            <Chip color="info" variant="outlined" size="small" label="Selenium" />
-            <Chip color="info" variant="outlined" size="small" label="Browserstack" />
           </>
         }
       />
 
-      <ProjectItem
+      <Project
         title="Software engineer in fintech"
         when="~ 4 years ago"
-        fullDescription={
+        tools="Scala/2/, Akka HTTP, MQL, JavaScript, Python, MariaDB"
+        story={
           <>
             <Typography>
               This was my first paid project with Scala. The system was a hack to get ticker data out of MetaTrader
@@ -171,21 +145,15 @@ function Projects() {
               The other two projects were in Python: an asset /CLO/ scoring software and an insurance financial data
               aggregator and plotter. The former leveraged Cython for occasional performance tweaks.
             </Typography>
-            <br />
-            <Chip color="info" variant="outlined" size="small" label="Scala/2/" />
-            <Chip color="info" variant="outlined" size="small" label="Akka HTTP" />
-            <Chip color="info" variant="outlined" size="small" label="MQL" />
-            <Chip color="info" variant="outlined" size="small" label="JavaScript" />
-            <Chip color="info" variant="outlined" size="small" label="Python" />
-            <Chip color="info" variant="outlined" size="small" label="MariaDB" />
           </>
         }
       />
 
-      <ProjectItem
+      <Project
         title="Engineer\Entrepreneur in betting"
         when="~ 6 years ago"
-        fullDescription={
+        tools="Java, Scala, JavaScript, Spring, PostgreSQL, MongoDB, Apache Spark, Apache Kafka, JenkinsCI, RabbitMQ"
+        story={
           <>
             <Typography
               variant="body1"
@@ -216,26 +184,15 @@ function Projects() {
               pipelines, deployments and backups, configuring queues and databases, going through logs, and a bunch of
               other cool stuff.
             </Typography>
-            <br />
-
-            <Chip color="info" variant="outlined" size="small" label="Java" />
-            <Chip color="info" variant="outlined" size="small" label="Scala" />
-            <Chip color="info" variant="outlined" size="small" label="JavaScript" />
-            <Chip color="info" variant="outlined" size="small" label="Spring" />
-            <Chip color="info" variant="outlined" size="small" label="PostgreSQL" />
-            <Chip color="info" variant="outlined" size="small" label="MongoDB" />
-            <Chip color="info" variant="outlined" size="small" label="Apache Spark" />
-            <Chip color="info" variant="outlined" size="small" label="Apache Kafka" />
-            <Chip color="info" variant="outlined" size="small" label="JenkinsCI" />
-            <Chip color="info" variant="outlined" size="small" label="RabbitMQ" />
           </>
         }
       />
 
-      <ProjectItem
+      <Project
         title="Software Engineer in fintech"
         when="~ 8 years ago"
-        fullDescription={
+        tools="Java EE, Oracle DB, JSP, AWS"
+        story={
           <>
             <Typography>
               In order to valuate securities, the system was processing data from three sources of, naturally, different
@@ -253,20 +210,15 @@ function Projects() {
               intricate, and frequent flights to Frankfurt were not only extremely helpful in understanding and modeling
               the domain, but also rather enjoyable.
             </Typography>
-            <br />
-
-            <Chip color="info" variant="outlined" size="small" label="Java EE" />
-            <Chip color="info" variant="outlined" size="small" label="Oracle DB" />
-            <Chip color="info" variant="outlined" size="small" label="JSP" />
-            <Chip color="info" variant="outlined" size="small" label="AWS" />
           </>
         }
       />
 
-      <ProjectItem
+      <Project
         title="The PhD years"
         when="~ 11 years ago"
-        fullDescription={
+        tools="Java, Xtext, Xtend, EMF, Alloy /relational modeling language/"
+        story={
           <>
             <Typography>
               Here's where I started to use Java. Our department was researching components-based software engineering,
@@ -278,21 +230,15 @@ function Projects() {
               My main focus, however, was on an external DSL for system definition, that would translate to Java and get
               SAT checked.
             </Typography>
-            <br />
-
-            <Chip color="info" variant="outlined" size="small" label="Java" />
-            <Chip color="info" variant="outlined" size="small" label="Xtext" />
-            <Chip color="info" variant="outlined" size="small" label="Xtend" />
-            <Chip color="info" variant="outlined" size="small" label="EMF" />
-            <Chip color="info" variant="outlined" size="small" label="Alloy" />
           </>
         }
       />
 
-      <ProjectItem
+      <Project
         title="Software Engineer in infosec"
         when="~ 14 years ago"
-        fullDescription={
+        tools="C/C++, cryptographic algorithms"
+        story={
           <>
             <Typography>
               Nothing particularly interesting happened during this time. The products were infosec tools, so I got to
@@ -300,18 +246,15 @@ function Projects() {
               my C/C++ and some cryptography skills. The exercise made clear to me that I do enjoy these languages as
               much, so I used them less and less with time, and they were replaced in my toolkit.
             </Typography>
-            <br />
-
-            <Chip color="info" variant="outlined" size="small" label="C/C++" />
-            <Chip color="info" variant="outlined" size="small" label="cryptographic algorithms" />
           </>
         }
       />
 
-      <ProjectItem
+      <Project
         title="Software Engineer in horeca"
         when="more than 15 years ago"
-        fullDescription={
+        tools="Borland C++, MySQL"
+        story={
           <>
             <Typography>
               The product was an ERP system for restaurants on Windows, so I also got to code some UI with Borland. From
@@ -320,18 +263,15 @@ function Projects() {
               separate product. The second one was a reporting library in rich text. It was a simple tool that could do
               cells and some styles, but I remember enjoying it a lot.
             </Typography>
-            <br />
-
-            <Chip color="info" variant="outlined" size="small" label="Borland C++" />
-            <Chip color="info" variant="outlined" size="small" label="MySQL" />
           </>
         }
       />
 
-      <ProjectItem
+      <Project
         title="Software Engineer in fintech"
         when="more than 15 years ago"
-        fullDescription={
+        tools="Erlang, Mnesia, Yaws"
+        story={
           <>
             <Typography>
               I am glad I got this as my first job. We were integrating local banks with the local v-card system,
@@ -339,11 +279,6 @@ function Projects() {
               We were coding in Erlang, running on BSDs with window managers and vims and a bunch of other cool stuff.
               That was fun, and rather fortunate for someone who was just starting their career.
             </Typography>
-            <br />
-
-            <Chip color="info" variant="outlined" size="small" label="Erlang" />
-            <Chip color="info" variant="outlined" size="small" label="Mnesia" />
-            <Chip color="info" variant="outlined" size="small" label="Yaws" />
           </>
         }
       />
