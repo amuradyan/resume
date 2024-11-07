@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Divider from '@mui/material/Divider';
 import Chip from '@mui/material/Chip';
+import Collapse from '@mui/material/Collapse';
 import { Typography, Link, Box } from '@mui/material';
 
 function Tech({ tech }) {
@@ -26,26 +27,25 @@ function Summary({ onClick, title, when }) {
 
 function Story({ expanded, story }) {
   return (
-    expanded ?
-      <Box sx={{ marginBottom: 2 }}>
-        <Typography>{story}</Typography>
-      </Box> :
-      <Box sx={{
-        overflow: 'hidden',
-        height: '100px',
-        marginBottom: 2,
+    <Collapse in={expanded} collapsedSize='80px'
+      sx={{
         position: 'relative',
+        overflow: 'hidden',
         '&::after': {
           content: '""',
+          display: expanded ? 'none' : 'block',
           position: 'absolute',
           bottom: 0,
+          left: 0,
           width: '100%',
-          height: '100px',
+          height: '80px',
           background: 'linear-gradient(to bottom, rgba(255, 255, 255, 0), white)',
-        }
-      }}>
+        },
+      }} >
+      <Box sx={{ marginBottom: 2 }}>
         <Typography>{story}</Typography>
-      </Box >
+      </Box>
+    </Collapse>
   );
 }
 
@@ -112,7 +112,7 @@ function Projects() {
               My main responsibility, along with my junior colleague, was automating e2e tests for a number of online
               shops dealing in all sorts of goods from wines to car parts. I started with simple Selenium tests and
               gradually moved to SerenityBDD. In 2 major rehauls along the way, the layers settled and the system
-              developed a comfortable library of steps, which led to tickets in Jira becoming either 1 or 2
+              developed a comfortable library of steps, which led to tickets in Jira becoming either 1 or 2&nbsp;
               <Link href="https://estimation.lunarlogic.io/">points</Link>. The latter case was due to us not feeling
               like splitting it further. Tests would run on different platforms and browsers with the help of
               Browserstack.
