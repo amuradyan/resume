@@ -41,7 +41,7 @@ function AboutMe(params) {
       <p>
         In my early years of studying I was interested in cryptography and information theory, which I still find fascinating.
         During my PhD years in Charles University in Prague, I took courses in modern programming languages, embedded systems,
-        and system behavior models and verification, but my research was about formal expression and verification /DSL/ of a
+        and system behavior models and verification, but my research was about formal expression and verification /DSL/ of
         component-based systems.
       </p>
 
