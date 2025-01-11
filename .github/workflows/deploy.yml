@@ -3,24 +3,42 @@ name: Deploy homepage
 on:
   push:
     branches:
-      - main
-    paths:
-      - '**.html'
+      - deployment
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # Step 1: Checkout Code
       - name: Checkout Code
         uses: actions/checkout@v3
 
-      - name: Install SSH Key
-        uses: shimataro/ssh-key-action@v2
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
         with:
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
+          node-version: 16 # Adjust this based on your React app requirements
 
-      - name: Move the files to the server
+      # Step 3: Install dependencies
+      - name: Install dependencies
         run: |
-          scp -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa homepage/static/* ${{ secrets.USERNAME }}@${{ secrets.REMOTE_HOST }}:~/public_html/
+          cd homepage/react
+          npm install
+
+      # Step 4: Build the React app
+      - name: Build the React app
+        run: |
+          cd homepage/react
+          npm run build
+
+      # Step 5: Set up SSH Agent
+      - name: Set up SSH Agent
+        uses: webfactory/ssh-agent@v0.5.3
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+
+      # Step 6: Deploy to EC2
+      - name: Deploy to EC2
+        run: |
+          scp -r -o StrictHostKeyChecking=no homepage/react/build/* ${{ secrets.USERNAME }}@${{ secrets.REMOTE_HOST }}:/var/www/amuradyan
