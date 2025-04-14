@@ -8,7 +8,7 @@
 ## Career
 
 ### Workshop leader - [TUMO Yerevan](https://tumo.org)
-01.05.2024 - 31.05.2024
+01.05.2025 - 31.05.2025
 
 **Tech used:** JS, Deno
 
