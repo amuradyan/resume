@@ -7,6 +7,33 @@
 
 ## Career
 
+### Workshop leader - [TUMO Yerevan](https://tumo.org)
+01.05.2024 - 31.05.2024
+
+**Tech used:** JS, Deno
+
+A workshop for high school students on building programming language. [Shvi](https://github.com/amuradyan/shvi/tree/master/shvi), the language, is inspired by LISP and is a simple notation for writing music. During the workshop, students will go through each step, gradually adding features and building a simple interpreter. The workshop is designed to be fun and engaging. It is open-ended from some point, to allow for creativity and exploration.
+
+### Freelance
+01.08.2024 - present
+
+#### Scrapper in Python
+
+**Tech used:** Python, BeautifulSoup, PostgreSQL
+
+Parsing Armenian laws and regulations from the official website of the Republic of Armeniato allow the users to search for certain laws and regulations by keywords. The project is in the early stages of development and is being done in Python.
+
+#### Scrapper in Scala
+
+**Tech used:** Scala 3, Cats, ScalaTest, PostgreSQL
+
+Scraping certain e-shops for hot deals and sales. The frontend for this project is Telegram, so the admin panel, the staging channel and the actual channel are all in Telegram.
+
+#### Full-stack developer in JS
+
+**Tech used:** React, Node.js, Next.js, PostgreSQL, Prisma
+
+A shop, providing a wide range of printing services, like stickers, boxes, prints on clothes, etc. The project is in the late stages of development and needs supervision and some refactoring. The main goal is to make the code more readable and maintainable.
 
 ### Senior Scala engineer - [DataArt Armenia](https://www.dataart.com)
 
