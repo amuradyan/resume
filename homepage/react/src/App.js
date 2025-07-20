@@ -48,14 +48,6 @@ const MyTab = styled((props) => <Tab disableRipple {...props} />)(({ theme }) =>
   fontSize: theme.typography.pxToRem(30)
 }));
 
-function UnderConstruction() {
-  return (
-    <div>
-      <div class="construction-banner">= = under construction = = = = =</div>
-      <div class="yellow-tape">= = = = = = = = = = = = = = = = = = =</div>
-    </div>
-  );
-}
 
 function Content() {
   const [value, setValue] = React.useState(0);
@@ -72,7 +64,6 @@ function Content() {
       marginLeft: '10%',
       marginRight: '10%',
     }}>
-      <UnderConstruction />
 
       <Tabs
         value={value}
