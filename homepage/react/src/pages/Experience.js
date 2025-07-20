@@ -67,9 +67,38 @@ function Project({ title, when, story, tools }) {
   );
 }
 
-function Projects() {
+function Experience() {
   return (
     <div>
+      <Project
+        title="Software engineer - Grid Dynamics"
+        when="08.05.2025 - current"
+        tools="Scala/2/, PredictionIO"
+        story={
+          <>
+            <Typography>
+              Supporting a recommendation engine in Scala 2 on <Link href="https://github.com/apache/predictionio">PredictionIO</Link> for large e-commerce platforms, extending the API
+              for a more granular search. Documenting behavior in an effort to write the next version of the service.
+            </Typography>
+          </>
+        }
+      />
+
+      <Project
+        title="Workshop leader - TUMO Yerevan"
+        when="01.05.2025 - 31.05.2025"
+        tools="JS, Deno"
+        story={
+          <>
+            <Typography>
+              A workshop for high school students on building programming language. <Link href="https://github.com/amuradyan/shvi/tree/master/shvi">Shvi</Link>, the language, is inspired by LISP and is a simple notation for writing music.
+              During the workshop, students moved through each step, supported with reading material and guided by tests, gradually adding features and building a simple interpreter. The course is designed in a way that each step produces
+              a tangible result in the real world - sounds in our case. It is open-ended from some point, to allow for creativity and exploration both musically and engineering wise <em>/some students added vibratos and lambdas/</em>.
+            </Typography>
+          </>
+        }
+      />
+
       <Project
         title="Software Engineer in travel"
         when="half a year ago"
@@ -285,4 +314,4 @@ function Projects() {
   );
 }
 
-export default Projects;
+export default Experience;

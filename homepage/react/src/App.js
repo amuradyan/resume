@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 import AboutMe from './pages/AboutMe';
-import Projects from './pages/Projects';
+import Experience from './pages/Experience';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -78,7 +78,7 @@ function Content() {
         <AboutMe />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        <Projects />
+        <Experience />
       </TabPanel>
     </Box>
   );
