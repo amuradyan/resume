@@ -72,7 +72,7 @@ function Content() {
         indicatorColor="none"
       >
         <MyTab label="About me" {...a11yProps(0)} />
-        <MyTab label="Projects" {...a11yProps(1)} />
+        <MyTab label="Experience" {...a11yProps(1)} />
       </Tabs>
       <TabPanel value={value} index={0}>
         <AboutMe />
