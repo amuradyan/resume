@@ -7,15 +7,23 @@
 
 ## Career
 
+### Software engineer - [Grid Dynamics](https://www.griddynamics.com/)
+
+08.05.2025 - current
+
+Supporting a recommendation engine in Scala 2 on PredictionIO for large e-commerce platforms, extending the API for a more granular search. Documenting behavior in an effort to write the next version of the service.
+
 ### Workshop leader - [TUMO Yerevan](https://tumo.org)
+
 01.05.2025 - 31.05.2025
 
 **Tech used:** JS, Deno
 
-A workshop for high school students on building programming language. [Shvi](https://github.com/amuradyan/shvi/tree/master/shvi), the language, is inspired by LISP and is a simple notation for writing music. During the workshop, students will go through each step, gradually adding features and building a simple interpreter. The workshop is designed to be fun and engaging. It is open-ended from some point, to allow for creativity and exploration.
+A workshop for high school students on building programming language. [Shvi](https://github.com/amuradyan/shvi/tree/master/shvi), the language, is inspired by LISP and is a simple notation for writing music. During the workshop, students moved through each step, supported with reading material and guided by tests, gradually adding features and building a simple interpreter. The course is designed in a way that each step produces a tangible result in the real world - sounds in our case. It is open-ended from some point, to allow for creativity and exploration both musically and engineering wise /some students added vibratos and lambdas/.
 
 ### Freelance
-01.08.2024 - present
+
+01.08.2024 - 08.05.2025
 
 #### Scrapper in Python
 
@@ -49,7 +57,6 @@ Soon after, I took up the role of the **team lead** of a team of five /team 1/ a
 
 For the last two months, I've been primarily engaged in maintenance tasks, frequently collaborating with a colleague.
 
-
 ### Technical Trainer - Quality Testing Lab
 
 01.03.2020 - 01.06.2022
@@ -57,7 +64,6 @@ For the last two months, I've been primarily engaged in maintenance tasks, frequ
 **Tech used:** Java/8/ as the main programming language, SerenityBDD, Gherkin, Cucumber, Selenium, Browserstack
 
 **Tasks:** Design and implementation of a number of testing frameworks for online shops. Started as simple Selenium tests and gradually moved to SerenityBDD. Compilation of Gherkin scenarios from user requirements. Integration with Browserstack․ Development of toy projects in Java for exercising with juniors.
-
 
 ### Freelance
 
@@ -67,7 +73,6 @@ For the last two months, I've been primarily engaged in maintenance tasks, frequ
 
 **Tasks:** Design and implementation of the backend for a ticker data aggregator from different MetaTrader4 vendors in Scala and MQL, processing Excel workbooks with financial data from different providers /normalization, exporting to PDF/ in Python. Validation of a framework for testing collateralized loan obligations and implementation of tests for CLOs in that framework.
 
-
 ### Co-founder and senior developer - Praddicts CJSC
 
 11.11.2016 - 01.02.2018
@@ -75,7 +80,6 @@ For the last two months, I've been primarily engaged in maintenance tasks, frequ
 **Tech used:** Java as the main programming language, Scala, JavaScript. Spring, PostgreSQL, MongoDB, Apache Spark, Apache Kafka, JenkinsCI, RabbitMQ
 
 **Tasks:** Design and maintenance of a REST API. Integration of third-party data sources. Doing all sorts of small things with techs above.
-
 
 ### Senior software developer - SCDM
 
@@ -85,7 +89,6 @@ For the last two months, I've been primarily engaged in maintenance tasks, frequ
 
 **Tasks:** Integration with a finmath library of a peculiar design. Integration with a number of asset-related data providers. Database design and development.
 
-
 ### Freelance every now and then
 
 01.09.2009 - 11.11.2014
@@ -93,7 +96,6 @@ For the last two months, I've been primarily engaged in maintenance tasks, frequ
 **Tech used:** C#, C++, Objective-C, NSIS, MySQL
 
 **Tasks:** Employee DB /MySQL/ in C#. Chat module in Objective-C based on XMPP protocol /Facebook chat, GTalk, custom chat with configurable XMPP settings/. Media player with a 360 plugin based on VLC using QT and C++. Installer with crypto plugins in NSIS for the player.
-
 
 ### Software developer - Hitegrity LLC
 
@@ -103,7 +105,6 @@ For the last two months, I've been primarily engaged in maintenance tasks, frequ
 
 **Tasks:** Porting OmniTrust Protected Browser project to 64 bit. Implementation of features such as notes and highlighters for the editor of Castelle’s FaxPress project. Participated in the ProtectFile project for SafeNet-Inc.
 
-
 ### Software developer - WestSoft LTD
 
 01.07.2007 - 01.12.2007
@@ -111,7 +112,6 @@ For the last two months, I've been primarily engaged in maintenance tasks, frequ
 **Tech used:** C++ as the main programming language /ATL, STL/, MySQL
 
 **Tasks:** Design and implementation of an ORM for MySQL\\C++ for an ERP application /early stages/. Library for custom report generation in rich text format.
-
 
 ### Software developer - Smart-Tech LTD
 
@@ -136,7 +136,6 @@ For the last two months, I've been primarily engaged in maintenance tasks, frequ
 **Tech used:** Java, Xtext, Xtend, EMF, Alloy /relational modeling language/
 
 **Tasks:** Implementation of the scheduler in jDEECo. Vehicle routing model /in Java, based on DEECo platform/. DSL design for [CBSE](https://en.wikipedia.org/wiki/Component-based_software_engineering)
-
 
 ### Bachelor and Master
 
