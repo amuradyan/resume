@@ -87,7 +87,7 @@ function Content() {
 function Homepage() {
   return (
     <div>
-      <Content />
+      <AboutMe />
     </div>
   );
 }
