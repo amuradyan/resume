@@ -11,7 +11,9 @@ function AboutMe(params) {
       </div>
       <div className="aboutme-right">
         <h2>Hello, I'm Andranik!</h2>
-        {/* All other text is hidden for now */}
+        <p>
+          I enjoy programming and write programs both commercially and for fun.
+        </p>
       </div>
     </div>
   )

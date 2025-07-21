@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   min-width: 100vw;
-  background: linear-gradient(135deg, #c7a86a 0%, #cfa86d 50%, #ad8643 100%) !important;
+  background: linear-gradient(135deg, #d6b675 0%, #e8b76e 50%, #ad8643 100%) !important;
 }
 
 code {
@@ -47,22 +47,25 @@ code {
   display: flex;
   min-height: 100vh;
   width: 100vw;
-  align-items: center;
-  justify-content: center;
-  gap: 3rem;
+  align-items: flex-start;
+  justify-content: stretch;
+  gap: 0;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
+  margin: 0;
+  padding-top: 25vh;
 }
 
 .aboutme-left {
-  flex: 1;
+  flex: 3;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  background: transparent;
+  height: 100vh;
 }
 
 .aboutme-photo {
@@ -74,11 +77,15 @@ code {
 }
 
 .aboutme-right {
-  flex: 2;
+  flex: 4;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
+  padding-left: 3rem;
+  padding-top: 5vh;
+  background: transparent;
+  height: 100vh;
 }
 
 .aboutme-right h2 {
