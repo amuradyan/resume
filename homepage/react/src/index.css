@@ -7,40 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   min-width: 100vw;
-  background: linear-gradient(135deg, #d6b675 0%, #e8b76e 50%, #ad8643 100%) !important;
+  background: linear-gradient(135deg, #ead3a5 0%, #f2d5a6 50%, #e1cda3 100%) !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-.construction-banner {
-  position: absolute;
-  top: 30px;
-  left: -70px;
-  padding: 4px 50px;
-  background-color: yellow;
-  color: black;
-  font-weight: bold;
-  width: 300px;
-  transform: rotate(-30deg);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-}
-
-.yellow-tape {
-  position: absolute;
-  top: 90px;
-  left: -145px;
-  padding: 4px 50px;
-  background-color: yellow;
-  color: black;
-  font-weight: bold;
-  width: 300px;
-  transform: rotate(-55deg);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-  z-index: 999;
 }
 
 .aboutme-container {
@@ -50,18 +22,13 @@ code {
   align-items: flex-start;
   justify-content: stretch;
   gap: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  padding-top: 25vh;
+  padding-left: 10vh;
 }
 
 .aboutme-left {
-  flex: 3;
+  flex: 2;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   background: transparent;
@@ -72,8 +39,7 @@ code {
   width: 421px;
   height: 506px;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .aboutme-right {
@@ -95,8 +61,22 @@ code {
 .aboutme-right p {
   font-size: 1.2rem;
   line-height: 1.6;
+  word-wrap: break-word ;
 }
 
 .aboutme-details {
   margin-top: 2rem;
+}
+
+.aboutme-icons {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+  width: 55%;
+}
+
+.aboutme-icons img {
+  width: 64px;
+  height: 64px;
 }
