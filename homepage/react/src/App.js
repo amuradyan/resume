@@ -8,6 +8,7 @@ import Box from '@mui/material/Box';
 
 import AboutMe from './pages/AboutMe';
 import Experience from './pages/Experience';
+import Projects from './pages/Projects';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -86,8 +87,9 @@ function Content() {
 
 function Homepage() {
   return (
-    <div>
+    <div className="main-container">
       <AboutMe />
+      <Projects />
     </div>
   );
 }
