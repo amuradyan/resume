@@ -9,6 +9,7 @@ import Box from '@mui/material/Box';
 import AboutMe from './pages/AboutMe';
 import Experience from './pages/Experience';
 import Projects from './pages/Projects';
+import BlogPost from './pages/BlogPost';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -26,6 +27,7 @@ function TabPanel(props) {
           <Typography>{children}</Typography>
         </Box>
       )}
+      <BlogPost slug="code-as-data" />;
     </div>
   );
 }
@@ -90,6 +92,7 @@ function Homepage() {
     <div className="main-container">
       <AboutMe />
       <Projects />
+      <BlogPost slug="code-as-data" />;
     </div>
   );
 }
