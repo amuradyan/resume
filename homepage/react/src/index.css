@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   min-width: 100vw;
-  background: linear-gradient(315deg, #c09c62 0%, #dbc59b 50%, #d4b371 100%) !important;
+  background: linear-gradient(315deg, #d6ae6e 0%, #f3ca7e 50%, #d4b371 100%) !important;
   overflow-x: hidden;
 }
 
@@ -21,8 +21,16 @@ code {
   grid-template-rows: auto auto;
   width: 100%;
   margin: 0 auto;
-  padding: 10% 10% 0 10%;
   box-sizing: border-box;
+}
+
+.main-container.homepage {
+  padding: 10% 10% 0 10%;
+}
+
+.main-container.notes {
+  padding: 0;
+  height: 100vh;
 }
 
 .aboutme-container {
@@ -211,4 +219,117 @@ code {
 
 .icon-button:hover {
   background: transparent;
+}
+
+.notes-layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  width: 100%;
+}
+
+.notes-top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.notes-photo {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.notes-photo.clickable {
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+}
+
+.notes-photo.clickable:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+.notes-icons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.notes-icons img {
+  width: 64px;
+  height: 64px;
+}
+
+.notes-content {
+  padding: 2rem;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.notes-header {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.notes-header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+.notes-list {
+  width: 100%;
+}
+
+.note-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.note-view-layout {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100vh;
+  width: 100%;
+  background: transparent;
+}
+
+.note-view-header {
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.back-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateX(-2px);
+}
+
+.note-view-content {
+  padding: 2rem;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }

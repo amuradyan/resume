@@ -1,30 +1,14 @@
+import React from 'react';
+import ProfileHeader from '../../components/ProfileHeader';
+
 function AboutMe({ onNotesClick }) {
   return (
     <div className="aboutme-container">
       <div className="aboutme-left">
         <div className="aboutme-photo-links">
-          <img
-            src="/me.png"
-            alt="Andranik"
-            className="aboutme-photo"
+          <ProfileHeader
+            onNotesClick={onNotesClick}
           />
-          <div className="aboutme-icons">
-            <a href="/RESUME.pdf" target="_blank" rel="noopener noreferrer" title="CV">
-              <img src="/cv.png" alt="CV" />
-            </a>
-            <a href="https://github.com/amuradyan" target="_blank" rel="noopener noreferrer" title="GitHub">
-              <img src="/gh.png" alt="GitHub" />
-            </a>
-            <a href="mailto:andranik@amuradyan.am" title="Email">
-              <img src="/email.png" alt="Email" />
-            </a>
-            <a href="#" onClick={(e) => { e.preventDefault(); onNotesClick(); }} title="Notes" className="icon-button">
-              <img src="/holocron.png" alt="Notes" />
-            </a>
-            <a href="https://թութ.հայ/@spectrum" target="_blank" rel="noopener noreferrer" title="Mastodon">
-              <img src="/mastodon.png" alt="Mastodon" />
-            </a>
-          </div>
         </div>
       </div>
       <div className="aboutme-right">

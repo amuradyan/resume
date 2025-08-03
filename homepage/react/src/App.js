@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import Homepage from './pages/homepage/Homepage';
-import Note from './pages/notes/Note';
+import NoteView from './pages/notes/NoteView';
 import Notes from './pages/notes/Notes';
 
 function App() {
@@ -9,7 +9,17 @@ function App() {
   const [selectedNoteSlug, setSelectedNoteSlug] = React.useState(null);
 
   const handleNotesClick = () => {
-    setShowNotes(!showNotes);
+    setShowNotes(true);
+    setSelectedNoteSlug(null);
+  };
+
+  const handleBackToHomepage = () => {
+    setShowNotes(false);
+    setSelectedNoteSlug(null);
+  };
+
+  const handleBackToNotes = () => {
+    setSelectedNoteSlug(null); // Go back to notes list
   };
 
   React.useEffect(() => {
@@ -22,10 +32,14 @@ function App() {
   }, []);
 
   return (
-    <div className="main-container">
-      <Homepage onNotesClick={handleNotesClick} />
-      {showNotes && <Notes />}
-      {selectedNoteSlug && <Note slug={selectedNoteSlug} />}
+    <div className={`main-container ${showNotes || selectedNoteSlug ? 'notes' : 'homepage'}`}>
+      {selectedNoteSlug ? (
+        <NoteView slug={selectedNoteSlug} onBackToNotes={handleBackToNotes} />
+      ) : showNotes ? (
+        <Notes onBackToHomepage={handleBackToHomepage} />
+      ) : (
+        <Homepage onNotesClick={handleNotesClick} />
+      )}
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import ProfileHeader from '../../components/ProfileHeader';
 
-function Notes() {
+function Notes({ onBackToHomepage }) {
   const [notes, setNotes] = useState([]);
 
   useEffect(() => {
@@ -22,30 +23,42 @@ function Notes() {
   };
 
   return (
-    <div className="notes-container">
-      <div className="notes-header">
-        <h1>Notes</h1>
+    <div className="notes-layout">
+      <div className="notes-top-bar">
+        <ProfileHeader
+          photoClassName="notes-photo"
+          iconsClassName="notes-icons"
+          onPhotoClick={onBackToHomepage}
+          onNotesClick={null}
+          showCV={true}
+        />
       </div>
-      <div className="notes-list">
-        {notes.map((note, index) => (
-          <div key={index} className="note-item">
-            <h3 className="note-title">
-              <button
-                onClick={() => window.dispatchEvent(new CustomEvent('selectNote', { detail: note.link }))}
-                className="note-title-button"
-              >
-                {note.title}
-              </button>
-            </h3>
-            <p className="note-date">{formatDate(note.date)}</p>
-            <p className="note-description">{note.description}</p>
-            <div className="note-tags">
-              {note.tags.map((tag, tagIndex) => (
-                <span key={tagIndex} className="note-tag">{tag}</span>
-              ))}
+
+      <div className="notes-content">
+        <div className="notes-header">
+          <h1>Notes</h1>
+        </div>
+        <div className="notes-list">
+          {notes.map((note, index) => (
+            <div key={index} className="note-item">
+              <h3 className="note-title">
+                <button
+                  onClick={() => window.dispatchEvent(new CustomEvent('selectNote', { detail: note.link }))}
+                  className="note-title-button"
+                >
+                  {note.title}
+                </button>
+              </h3>
+              <p className="note-date">{formatDate(note.date)}</p>
+              <p className="note-description">{note.description}</p>
+              <div className="note-tags">
+                {note.tags.map((tag, tagIndex) => (
+                  <span key={tagIndex} className="note-tag">{tag}</span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
