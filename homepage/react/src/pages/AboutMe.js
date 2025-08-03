@@ -12,9 +12,6 @@ function AboutMe({ onNotesClick }) {
             <a href="https://github.com/amuradyan" target="_blank" rel="noopener noreferrer" title="GitHub">
               <img src="/gh.png" alt="GitHub" />
             </a>
-            <a href="#experience" title="Experience">
-              <img src="/droid.png" alt="Experience" />
-            </a>
             <a href="mailto:andranik@amuradyan.am" title="Email">
               <img src="/email.png" alt="Email" />
             </a>
