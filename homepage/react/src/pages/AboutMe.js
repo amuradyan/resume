@@ -1,4 +1,4 @@
-function AboutMe(params) {
+function AboutMe({ onNotesClick }) {
   return (
     <div className="aboutme-container">
       <div className="aboutme-left">
@@ -18,6 +18,9 @@ function AboutMe(params) {
             <a href="mailto:andranik@amuradyan.am" title="Email">
               <img src="/email.png" alt="Email" />
             </a>
+            <button onClick={onNotesClick} title="Notes" className="icon-button">
+              <img src="/holocron.png" alt="Notes" />
+            </button>
           </div>
         </div>
       </div>

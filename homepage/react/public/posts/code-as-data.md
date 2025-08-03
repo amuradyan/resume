@@ -199,6 +199,8 @@ Now, let's try and implement something similar in Clojure - infix arithmetics in
 
 Here, the code is much shorter. Just like the payment log operates on a list of characters, the macro operates on a list of arithmetic expression. The code is mostly the same, with the exception of `defmacro` to instruct the interpreter to treat the function as a macro. That's possible because Clojure is a Lisp, and Lisps treat code as data. This means that the code itself is a data structure, and we can manipulate it as we would an ordinary list.
 
+## In conclusion
+
 Scala code looks like a text, it's readable ok, but it does not quite resemble a data structure. In fact, the only data structure it resembles is a string of characters, and that is not the most convenient representation to do operations with. In order to evaluate and\or manipulate it Scala turns it into a tree, where each token in the string is marked and placed appropriately. This is done by the compiler and hidden from the user. The tree is then traversed and evaluated. This means that what we will be manipulating is not the original string, but a tree representation of it.
 
 Such traits simplify domain specific language creation, helping us to bridge the gap between our programming language and the domain.

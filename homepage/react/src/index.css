@@ -95,3 +95,120 @@ code {
   width: 100%;
   height: auto;
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin-top: 3rem;
+  place-items: start center;
+}
+
+.project-item {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 200px;
+}
+
+.project-emoji {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  line-height: 1;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.project-item:hover .project-emoji {
+  filter: grayscale(0%);
+}
+
+.project-name {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.project-description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0 0.5rem;
+}
+
+.note {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.note h1, .note h2, .note h3, .note h4, .note h5, .note h6 {
+  font-size: 2em;
+}
+
+.note p {
+  font-size: 1.2rem;
+}
+
+.note-tags {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(auto, max-content));
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+  justify-content: start;
+}
+
+.note-tag {
+  background: rgba(255, 255, 255, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0.4rem 0.8rem;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  color: #444;
+  white-space: nowrap;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease;
+}
+
+.note-tag:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.note-title-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+}
+
+.note-title-button:hover {
+  text-decoration: underline;
+  color: #555;
+}
+
+.icon-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  outline: none;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+.icon-button:hover {
+  background: transparent;
+}
