@@ -34,7 +34,11 @@ function App() {
   return (
     <div className={`main-container ${showNotes || selectedNoteSlug ? 'notes' : 'homepage'}`}>
       {selectedNoteSlug ? (
-        <NoteView slug={selectedNoteSlug} onBackToNotes={handleBackToNotes} />
+        <NoteView
+          slug={selectedNoteSlug}
+          onBackToNotes={handleBackToNotes}
+          onBackToHomepage={handleBackToHomepage}
+        />
       ) : showNotes ? (
         <Notes onBackToHomepage={handleBackToHomepage} />
       ) : (

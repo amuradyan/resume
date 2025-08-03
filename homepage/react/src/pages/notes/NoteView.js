@@ -2,14 +2,14 @@ import React from 'react';
 import Note from './Note';
 import ProfileHeader from '../../components/ProfileHeader';
 
-function NoteView({ slug, onBackToNotes }) {
+function NoteView({ slug, onBackToNotes, onBackToHomepage }) {
   return (
     <div className="note-view-layout">
       <div className="notes-top-bar">
         <ProfileHeader
           photoClassName="notes-photo"
           iconsClassName="notes-icons"
-          onPhotoClick={onBackToNotes}
+          onPhotoClick={onBackToHomepage}
           onNotesClick={null}
           showCV={true}
         />
