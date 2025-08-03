@@ -14,11 +14,15 @@ function AboutMe({ onNotesClick }) {
       <div className="aboutme-right">
         <h2>Hello, I'm Andranik!</h2>
         <p>
-          I enjoy programming and am more interested in programming languages and systems overall. I write programs both for fun and commercially. Every now and then I'll take up teaching, and when I do not do computer stuff, I try to make things of wood, work out, cook and what not...
-
+          I enjoy programming and am particularly interested in programming languages and systems /currently into Lisps/. I write programs both for fun and commercially. Every now and then I'll take up teaching, volunteered at my uni for quite some time, might give a talk. You can read my notes by clicking the <a href="https://starwars.fandom.com/wiki/Holocron" target="_blank" rel="noopener noreferrer"><i>holocron</i></a>.
         </p>
+
         <p>
-          Recently got my driving license, so we can talk cars and traffic.
+          If you decide to contact me, you can ping me at mastodon or email me at <a href="mailto:andranik@amuradyan.am"><i>andranik [at] amuradyan [dot] am</i></a>.
+        </p>
+
+        <p>
+          P.S. Recently got my driving license, so we can talk traffic.
         </p>
       </div>
     </div>
