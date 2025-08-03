@@ -9,6 +9,9 @@ function AboutMe({ onNotesClick }) {
             className="aboutme-photo"
           />
           <div className="aboutme-icons">
+            <a href="/RESUME.pdf" target="_blank" rel="noopener noreferrer" title="CV">
+              <img src="/cv.png" alt="CV" />
+            </a>
             <a href="https://github.com/amuradyan" target="_blank" rel="noopener noreferrer" title="GitHub">
               <img src="/gh.png" alt="GitHub" />
             </a>

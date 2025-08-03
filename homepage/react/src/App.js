@@ -5,7 +5,7 @@ import Projects from './pages/Projects';
 import Note from './pages/Note';
 import Notes from './pages/Notes';
 
-function Homepage() {
+function App() {
   const [showNotes, setShowNotes] = React.useState(false);
   const [selectedNoteSlug, setSelectedNoteSlug] = React.useState(null);
 
@@ -32,4 +32,4 @@ function Homepage() {
   );
 }
 
-export default Homepage;
+export default App;
