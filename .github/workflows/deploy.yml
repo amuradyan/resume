@@ -23,6 +23,10 @@ jobs:
           cd homepage/react
           npm install
 
+      - name: Copy RESUME.pdf to public folder
+        run: |
+          cp RESUME.pdf homepage/react/public/
+
       - name: Build the homepage
         run: |
           cd homepage/react
