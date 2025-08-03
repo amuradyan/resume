@@ -52,7 +52,7 @@ function Notes({ onBackToHomepage }) {
               <p className="note-date">{formatDate(note.date)}</p>
               <p className="note-description">{note.description}</p>
               <div className="note-tags">
-                {note.tags.map((tag, tagIndex) => (
+                {(note.tags || []).map((tag, tagIndex) => (
                   <span key={tagIndex} className="note-tag">{tag}</span>
                 ))}
               </div>

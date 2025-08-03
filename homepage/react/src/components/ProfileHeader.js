@@ -28,17 +28,16 @@ function ProfileHeader({
         <a href="mailto:andranik@amuradyan.am" title="Email">
           <img src="/email.png" alt="Email" />
         </a>
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
+        <button
+          type="button"
+          onClick={() => {
             if (onNotesClick) onNotesClick();
           }}
           title={onNotesClick ? "Notes" : "Back to Notes"}
           className="icon-button"
         >
           <img src="/holocron.png" alt="Notes" />
-        </a>
+        </button>
         <a href="https://թութ.հայ/@spectrum" target="_blank" rel="noopener noreferrer" title="Mastodon">
           <img src="/mastodon.png" alt="Mastodon" />
         </a>
