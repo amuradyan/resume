@@ -19,14 +19,14 @@ function ProfileHeader({
       <div className={iconsClassName}>
         {showCV && (
           <a href="/RESUME.pdf" target="_blank" rel="noopener noreferrer" title="CV">
-            <img src="/cv.png" alt="CV" />
+            <img src="/cv.min.svg" alt="CV" />
           </a>
         )}
         <a href="https://github.com/amuradyan" target="_blank" rel="noopener noreferrer" title="GitHub">
-          <img src="/gh.png" alt="GitHub" />
+          <img src="/gh.min.svg" alt="GitHub" />
         </a>
         <a href="mailto:andranik@amuradyan.am" title="Email">
-          <img src="/email.png" alt="Email" />
+          <img src="/email.min.svg" alt="Email" />
         </a>
         <button
           type="button"
@@ -36,10 +36,10 @@ function ProfileHeader({
           title="Notes"
           className="icon-button"
         >
-          <img src="/holocron.png" alt="Notes" />
+          <img src="/holocron.min.svg" alt="Notes" />
         </button>
         <a href="https://թութ.հայ/@spectrum" target="_blank" rel="noopener noreferrer" title="Mastodon">
-          <img src="/mastodon.png" alt="Mastodon" />
+          <img src="/mastodon.min.svg" alt="Mastodon" />
         </a>
       </div>
     </>
