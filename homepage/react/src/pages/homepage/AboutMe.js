@@ -16,6 +16,8 @@ function AboutMe({ onNotesClick }) {
         <p>
           I enjoy programming and am more interested in programming languages and systems overall. I write programs both for fun and commercially. Every now and then I'll take up teaching, and when I do not do computer stuff, I try to make things of wood, work out, cook and what not...
 
+        </p>
+        <p>
           Recently got my driving license, so we can talk cars and traffic.
         </p>
       </div>

@@ -270,7 +270,7 @@ code {
   padding: 2rem;
   overflow-y: auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: min(90vw, 1000px);
   margin: 0 auto;
 }
 
@@ -330,6 +330,95 @@ code {
   padding: 2rem;
   overflow-y: auto;
   width: 100%;
-  max-width: 1000px;
+  max-width: min(90vw, 1000px);
   margin: 0 auto;
+}
+
+/* Responsive styles for AboutMe component */
+@media (max-width: 1024px) {
+  .aboutme-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .aboutme-photo {
+    width: 300px;
+    height: 360px;
+  }
+
+  .aboutme-right {
+    padding-left: 5%;
+    padding-top: 5%;
+  }
+
+  .aboutme-icons img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutme-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .aboutme-left {
+    order: 1;
+  }
+
+  .aboutme-right {
+    order: 2;
+    padding-left: 0;
+    padding-top: 0;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .aboutme-photo {
+    width: 250px;
+    height: 300px;
+    margin-top: 0;
+  }
+
+  .aboutme-icons {
+    margin-top: 1rem;
+    gap: 3%;
+  }
+
+  .aboutme-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .aboutme-right h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .aboutme-right p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container.homepage {
+    padding: 5% 5% 0 5%;
+  }
+
+  .aboutme-photo {
+    width: 200px;
+    height: 240px;
+  }
+
+  .aboutme-icons img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .aboutme-right p {
+    font-size: 1rem;
+  }
 }
