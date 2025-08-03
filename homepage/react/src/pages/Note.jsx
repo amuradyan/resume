@@ -3,7 +3,7 @@ import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const BlogPost = ({ slug }) => {
+const Note = ({ slug }) => {
   const [content, setContent] = useState('');
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const BlogPost = ({ slug }) => {
   }, [slug]);
 
   return (
-    <div className="blog-post">
+    <div className="note">
       <ReactMarkdown
         children={content}
         components={{
@@ -41,4 +41,4 @@ const BlogPost = ({ slug }) => {
   );
 };
 
-export default BlogPost;
+export default Note;

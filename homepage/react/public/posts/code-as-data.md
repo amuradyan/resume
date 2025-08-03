@@ -1,6 +1,6 @@
 # Code as data
 
-A while ago I was having a coffee with a friend, and since I was just getting into Lisps, I buzzed his ears off with the idea of *code-as-data* and how awesome it is. I was so exited about it, that he proposed I come and give a talk to his students on the topic. Below is the more coherent version of what was in that talk. You may find it one-sided, and rightly so, since most examples are in Scala, but that's because I've been doing Scala for the past few years and the ideas translate easily to other languages, so no harm there. For the Lisp, I chose Clojure. These two also play together since both provide JVM interop.
+A while ago I was having coffee with a friend, and since I was just getting into Lisps, I buzzed his ears off with the idea of *code-as-data* and how awesome it is. I was so exited about it, that he proposed I come and give a talk to his students on the topic. Below is the more coherent version of what was in that talk. You may find it one-sided, and rightly so, since most examples are in Scala, but that's because I've been doing Scala for the past few years and the ideas translate easily to other languages, so no harm there. For the Lisp, I chose Clojure. These two also play together since both provide JVM interop.
 
 ## Polyglot systems
 
