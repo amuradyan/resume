@@ -14,7 +14,9 @@ function AboutMe({ onNotesClick }) {
       <div className="aboutme-right">
         <h2>Hello, I'm Andranik!</h2>
         <p>
-          I enjoy programming /languages/ and write programs both commercially and for fun. Every now and then I'll take up teaching, and when I do not do computer stuff, I try to make things of wood and practice music.
+          I enjoy programming and am more interested in programming languages and systems overall. I write programs both for fun and commercially. Every now and then I'll take up teaching, and when I do not do computer stuff, I try to make things of wood, work out, cook and what not...
+
+          Recently got my driving license, so we can talk cars and traffic.
         </p>
       </div>
     </div>
