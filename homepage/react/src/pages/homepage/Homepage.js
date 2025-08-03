@@ -7,6 +7,9 @@ function Homepage({ onNotesClick }) {
     <>
       <AboutMe onNotesClick={onNotesClick} />
       <Projects />
+      <div className="page-end">
+        ~~~ end ~~~
+      </div>
     </>
   );
 }

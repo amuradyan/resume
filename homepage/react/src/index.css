@@ -334,6 +334,23 @@ code {
   margin: 0 auto;
 }
 
+.page-end {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin: 20rem auto 2rem auto;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.05);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Responsive styles for AboutMe component */
 @media (max-width: 1024px) {
   .aboutme-container {
