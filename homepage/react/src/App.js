@@ -1,9 +1,8 @@
 import * as React from 'react';
 
-import AboutMe from './pages/AboutMe';
-import Projects from './pages/Projects';
-import Note from './pages/Note';
-import Notes from './pages/Notes';
+import Homepage from './pages/homepage/Homepage';
+import Note from './pages/notes/Note';
+import Notes from './pages/notes/Notes';
 
 function App() {
   const [showNotes, setShowNotes] = React.useState(false);
@@ -24,8 +23,7 @@ function App() {
 
   return (
     <div className="main-container">
-      <AboutMe onNotesClick={handleNotesClick} />
-      <Projects />
+      <Homepage onNotesClick={handleNotesClick} />
       {showNotes && <Notes />}
       {selectedNoteSlug && <Note slug={selectedNoteSlug} />}
     </div>
