@@ -35,9 +35,6 @@ function Notes({ onBackToHomepage }) {
       </div>
 
       <div className="notes-content">
-        <div className="notes-header">
-          <h1>Notes</h1>
-        </div>
         <div className="notes-list">
           {notes.map((note, index) => (
             <div key={index} className="note-item">

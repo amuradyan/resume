@@ -33,7 +33,7 @@ function ProfileHeader({
           onClick={() => {
             if (onNotesClick) onNotesClick();
           }}
-          title={onNotesClick ? "Notes" : "Back to Notes"}
+          title="Notes"
           className="icon-button"
         >
           <img src="/holocron.png" alt="Notes" />
