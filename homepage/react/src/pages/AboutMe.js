@@ -18,9 +18,12 @@ function AboutMe({ onNotesClick }) {
             <a href="mailto:andranik@amuradyan.am" title="Email">
               <img src="/email.png" alt="Email" />
             </a>
-            <button onClick={onNotesClick} title="Notes" className="icon-button">
+            <a href="#" onClick={(e) => { e.preventDefault(); onNotesClick(); }} title="Notes" className="icon-button">
               <img src="/holocron.png" alt="Notes" />
-            </button>
+            </a>
+            <a href="https://թութ.հայ/@spectrum" target="_blank" rel="noopener noreferrer" title="Mastodon">
+              <img src="/mastodon.png" alt="Mastodon" />
+            </a>
           </div>
         </div>
       </div>
