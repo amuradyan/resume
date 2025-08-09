@@ -69,6 +69,11 @@ code {
 .aboutme-icons img {
   width: 64px;
   height: 64px;
+  transition: transform 0.3s ease;
+}
+
+.aboutme-icons img:hover {
+  animation: wiggle 0.3s ease-in-out;
 }
 
 .aboutme-right {
@@ -263,6 +268,11 @@ code {
 .notes-icons img {
   width: 64px;
   height: 64px;
+  transition: transform 0.3s ease;
+}
+
+.notes-icons img:hover {
+  animation: wiggle 0.3s ease-in-out;
 }
 
 .notes-content {
@@ -435,4 +445,12 @@ code {
   .aboutme-right p {
     font-size: 1rem;
   }
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+  75% { transform: rotate(-2deg); }
+  100% { transform: rotate(0deg); }
 }
