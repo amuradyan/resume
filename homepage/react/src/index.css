@@ -176,19 +176,20 @@ code {
 }
 
 .note-tag {
-  background: rgba(255, 255, 255, 0.3);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 0.4rem 0.8rem;
-  border-radius: 16px;
-  font-size: 0.85rem;
-  color: #444;
+  background: rgba(255, 255, 255, 0.35);
+  border: none;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0;
+  font-size: 0.8rem;
+  color: #222;
   white-space: nowrap;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.2s ease;
+  box-shadow: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .note-tag:hover {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.55);
+  color: #000;
 }
 
 .note-title-button {
