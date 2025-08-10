@@ -20,10 +20,30 @@ function RandomMiraImages() {
       };
     }
 
+    // Check if the image name contains "right"
+    if (imageName.toLowerCase().includes('right')) {
+      return {
+        bottom: 0,
+        right: 0, // Stick to the browser's right edge
+      };
+    }
+
     return {
       bottom: 0,
       left: Math.random() * 80 + 10, // 10% to 90% from left for other images
     };
+  };
+
+  const generateTooltip = (filename) => {
+    let base = filename.replace(/\.png$/i, '');
+    base = base.replace(/-left$/i, '');
+    base = base.replace(/-right$/i, '');
+    base = base.replace(/-\d+$/i, '');
+    base = base.replace(/^mira-?/i, '');
+    base = base.replace(/-/g, ' ').trim();
+    if (!base) return 'Mira';
+    base = base.charAt(0).toLowerCase() + base.slice(1);
+    return 'Mira ' + base;
   };
 
   useEffect(() => {
@@ -33,7 +53,8 @@ function RandomMiraImages() {
     setRandomImage({
       src: `/mira/${selectedImage}`,
       position: getRandomBottomPosition(selectedImage),
-      key: Math.random()
+      key: Math.random(),
+      tooltip: generateTooltip(selectedImage)
     });
   }, []);
 
@@ -43,14 +64,16 @@ function RandomMiraImages() {
     <img
       key={randomImage.key}
       src={randomImage.src}
-      alt="Mira"
+      alt={randomImage.tooltip}
+      title={randomImage.tooltip}
       className="random-mira-image"
       style={{
         position: 'fixed',
         bottom: `${randomImage.position.bottom}%`,
-        left: `${randomImage.position.left}%`,
+        ...(randomImage.position.right !== undefined
+          ? { right: 0 }
+          : { left: `${randomImage.position.left}%` }),
         zIndex: 1,
-        pointerEvents: 'none',
       }}
     />
   );
