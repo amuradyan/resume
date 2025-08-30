@@ -3,6 +3,7 @@
 [PDF (latest version)](https://raw.githubusercontent.com/amuradyan/resume/main/RESUME.pdf) |
 [github](https://github.com/amuradyan) |
 [email](mailto:muradianator@gmail.com) |
+[homepage](https://amuradyan.am) |
 [Yerevan, Armenia](https://www.openstreetmap.org/relation/364087#map=12/40.1614/44.5259)
 
 ## Career
