@@ -18,7 +18,7 @@ function ProfileHeader({
       />
       <div className={iconsClassName}>
         {showCV && (
-          <a href="/RESUME.pdf" target="_blank" rel="noopener noreferrer" title="CV">
+          <a href="/AndranikMuradyan.pdf" target="_blank" rel="noopener noreferrer" title="CV">
             <img src="/cv.min.png" alt="CV" />
           </a>
         )}
