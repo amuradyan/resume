@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - "homepage/react/**"
   repository_dispatch:
     types: [pdf-generated]
 
