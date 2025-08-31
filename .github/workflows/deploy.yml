@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  repository_dispatch:
+    types: [pdf-generated]
 
 jobs:
   deploy:
@@ -23,9 +25,9 @@ jobs:
           cd homepage/react
           npm install
 
-      - name: Copy RESUME.pdf to public folder
+      - name: Copy AndranikMuradyan.pdf to public folder
         run: |
-          cp RESUME.pdf homepage/react/public/
+          cp AndranikMuradyan.pdf homepage/react/public/
 
       - name: Build the homepage
         run: |

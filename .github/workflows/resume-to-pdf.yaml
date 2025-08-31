@@ -17,19 +17,24 @@ jobs:
           sudo apt-get install pandoc
       - name: Convert MD to PDF
         run: |
-          pandoc --pdf-engine=xelatex README.md -o RESUME.pdf -V geometry:margin=15mm -V fontsize=12pt
+          pandoc --pdf-engine=xelatex README.md -o AndranikMuradyan.pdf -V geometry:margin=15mm -V fontsize=12pt
         env:
           LANG: en_US.UTF-8
-      - name: Commit RESUME.pdf
+      - name: Commit AndranikMuradyan.pdf
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add RESUME.pdf
-          git commit -a -m "RESUME.pdf updated"
+          git add AndranikMuradyan.pdf
+          git commit -a -m "AndranikMuradyan.pdf updated"
       - name: Push to repo
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
           directory: .
-          message: Update RESUME.pdf
+          message: Update AndranikMuradyan.pdf
+      - name: Trigger deploy workflow
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: pdf-generated
