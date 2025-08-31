@@ -11,7 +11,7 @@
 
 08.05.2025 - current
 
-Supporting a recommendation engine in Scala 2 on PredictionIO for large e-commerce platforms, extending the API for a more granular search. Documenting behavior in an effort to write the next version of the service.
+Supporting a recommendation engine in Scala 2 on PredictionIO for large e-commerce platforms, extending the API for a more granular search. Documenting behavior in an effort to later write the next version of the service in Java 21, prototyping APIs, setting up meetings.
 
 ### Workshop leader - [TUMO Yerevan](https://tumo.org)
 
