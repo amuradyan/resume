@@ -1,7 +1,7 @@
 # Andranik Muradyan
 
 [github](https://github.com/amuradyan) |
-[email](mailto:muradianator@gmail.com) |
+[email](mailto:andranik@amuradyan.am) |
 [homepage](https://amuradyan.am) |
 [Yerevan, Armenia](https://www.openstreetmap.org/relation/364087#map=12/40.1614/44.5259)
 
