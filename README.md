@@ -1,6 +1,5 @@
 # Andranik Muradyan
 
-[PDF (latest version)](https://raw.githubusercontent.com/amuradyan/resume/main/RESUME.pdf) |
 [github](https://github.com/amuradyan) |
 [email](mailto:muradianator@gmail.com) |
 [homepage](https://amuradyan.am) |
