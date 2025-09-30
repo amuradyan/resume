@@ -21,10 +21,10 @@ function Projects() {
       url: "https://github.com/dekanat/darling"
     },
     {
-      emoji: "🪈",
-      name: "shvi",
-      description: "Shvi is a tool in JS to write music in Lisp notation",
-      url: "https://github.com/amuradyan/shvi/tree/master/shvi"
+      emoji: "🪉",
+      name: "lyre",
+      description: "Lyre is a music streaming Lisp, written in JS.",
+      url: "https://github.com/amuradyan/lyre"
     },
     {
       emoji: "🌊",
