@@ -24,7 +24,7 @@ function Projects() {
       emoji: "🪉",
       name: "lyre",
       description: "Lyre is a music streaming Lisp, written in JS.",
-      url: "https://github.com/amuradyan/lyre"
+      url: "https://lyre.amuradyan.am"
     },
     {
       emoji: "🌊",
