@@ -12,25 +12,23 @@ function RandomMiraImages() {
   importAll(require.context('../../public/mira', false, /\.png$/));
 
   const getRandomBottomPosition = (imageName) => {
-    // Check if the image name contains "left"
     if (imageName.toLowerCase().includes('left')) {
       return {
         bottom: 0,
-        left: 0, // Always place at the left corner
+        left: 0,
       };
     }
 
-    // Check if the image name contains "right"
     if (imageName.toLowerCase().includes('right')) {
       return {
         bottom: 0,
-        right: 0, // Stick to the browser's right edge
+        right: 0,
       };
     }
 
     return {
       bottom: 0,
-      left: Math.random() * 80 + 10, // 10% to 90% from left for other images
+      left: Math.random() * 80 + 10,
     };
   };
 
