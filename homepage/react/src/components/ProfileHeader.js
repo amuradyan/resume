@@ -5,12 +5,15 @@ function ProfileHeader({
   iconsClassName = "aboutme-icons",
   onPhotoClick,
   onNotesClick,
-  showCV = true
+  showCV = true,
+  theme = 'personal'
 }) {
+  const photoSrc = theme === 'charcoal' ? '/me-greyscale.png' : '/me.png';
+
   return (
     <>
       <img
-        src="/me.png"
+        src={photoSrc}
         alt="Andranik"
         className={`${photoClassName} ${onPhotoClick ? 'clickable' : ''}`}
         onClick={onPhotoClick}

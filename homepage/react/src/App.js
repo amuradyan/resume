@@ -7,6 +7,7 @@ import Notes from './pages/notes/Notes';
 function App() {
   const [showNotes, setShowNotes] = React.useState(false);
   const [selectedNoteSlug, setSelectedNoteSlug] = React.useState(null);
+  const [theme, setTheme] = React.useState('personal');
 
   const handleNotesClick = () => {
     setShowNotes(true);
@@ -36,9 +37,13 @@ function App() {
   }, []);
 
   React.useEffect(() => {
+    document.body.className = `theme-${theme}`;
+  }, [theme]);
+
+  React.useEffect(() => {
     const handlePopState = (event) => {
       const state = event.state;
-      
+
       if (!state || state.page === 'homepage') {
         setShowNotes(false);
         setSelectedNoteSlug(null);
@@ -68,12 +73,12 @@ function App() {
 
     initializeFromHash();
     window.addEventListener('popstate', handlePopState);
-    
+
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
   return (
-    <div className={`main-container ${showNotes || selectedNoteSlug ? 'notes' : 'homepage'}`}>
+    <div className={`main-container ${showNotes || selectedNoteSlug ? 'notes' : 'homepage'} theme-${theme}`}>
       {selectedNoteSlug ? (
         <NoteView
           slug={selectedNoteSlug}
@@ -83,7 +88,7 @@ function App() {
       ) : showNotes ? (
         <Notes onBackToHomepage={handleBackToHomepage} />
       ) : (
-        <Homepage onNotesClick={handleNotesClick} />
+        <Homepage onNotesClick={handleNotesClick} theme={theme} setTheme={setTheme} />
       )}
     </div>
   );

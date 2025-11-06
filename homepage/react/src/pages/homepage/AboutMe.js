@@ -1,13 +1,14 @@
 import React from 'react';
 import ProfileHeader from '../../components/ProfileHeader';
 
-function AboutMe({ onNotesClick }) {
+function AboutMe({ onNotesClick, theme }) {
   return (
     <div className="aboutme-container">
       <div className="aboutme-left">
         <div className="aboutme-photo-links">
           <ProfileHeader
             onNotesClick={onNotesClick}
+            theme={theme}
           />
         </div>
       </div>
