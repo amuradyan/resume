@@ -9,6 +9,9 @@
     "react-scripts": "^5.0.1",
     "react-syntax-highlighter": "^16.1.0"
   },
+  "overrides": {
+    "webpack-dev-server": "^5.2.1"
+  },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-private-property-in-object": "^7.25.9"
