@@ -6,11 +6,16 @@
     "@mui/material": "^6.1.5",
     "react": "^18.3.1",
     "react-markdown": "^10.1.0",
+<<<<<<< HEAD
     "react-scripts": "^5.0.1",
+=======
+    "react-scripts": "^5.1.0-next.26",
+>>>>>>> d35f642 (:construction: vulnerabilities)
     "react-syntax-highlighter": "^16.1.0"
   },
   "overrides": {
-    "webpack-dev-server": "^5.2.1"
+    "postcss": "^8.4.31",
+    "nth-check": "^2.0.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
