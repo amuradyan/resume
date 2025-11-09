@@ -18,7 +18,15 @@ body {
 
 /* Charcoal/Steel theme */
 body.theme-charcoal {
-  background: linear-gradient(315deg, #c0c0c0 0%, #d3d3d3 50%, #c0c0c0 100%) !important;
+  background:
+    radial-gradient(ellipse 180px 240px at 99% 10%, rgba(65, 63, 63, 0.3) 0%, transparent 70%),
+    radial-gradient(ellipse 180px 140px at 20% 10%, rgba(255, 255, 255, 0.3) 0%, transparent 70%),
+    radial-gradient(ellipse 160px 130px at 5% 25%, rgba(0, 0, 0, 0.3) 0%, transparent 70%),
+    radial-gradient(ellipse 280px 240px at 85% 15%, rgba(255, 255, 255, 0.3) 0%, transparent 70%),
+    radial-gradient(ellipse 300px 260px at 20% 65%, rgba(22, 22, 22, 0.3) 0%, transparent 70%),
+    radial-gradient(ellipse 170px 140px at 85% 70%, rgba(255, 255, 255, 0.3) 0%, transparent 70%),
+    radial-gradient(ellipse 150px 130px at 75% 85%, rgba(0, 0, 0, 0.3) 0%, transparent 70%),
+    linear-gradient(315deg, #c2c0c0 0%, #d4d2d1 50%, #c2c0c0 100%) !important;
 }
 
 code {
@@ -67,6 +75,7 @@ code {
   border-radius: 1%;
   margin-top: 5%;
 }
+
 
 .aboutme-icons {
   display: grid;
@@ -590,6 +599,7 @@ body.theme-charcoal .toggle-emoji-corporate {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .carousel-dots {
@@ -629,7 +639,7 @@ body.theme-charcoal .toggle-emoji-corporate {
   width: 100%;
   max-width: 900px;
   padding: 2rem;
-  background: rgba(255, 255, 255, 0.5);
+  background: #e1dedf;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   min-height: 300px;
