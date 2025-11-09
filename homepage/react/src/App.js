@@ -7,7 +7,10 @@ import Notes from './pages/notes/Notes';
 function App() {
   const [showNotes, setShowNotes] = React.useState(false);
   const [selectedNoteSlug, setSelectedNoteSlug] = React.useState(null);
-  const [theme, setTheme] = React.useState('personal');
+  const [theme, setTheme] = React.useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme || 'personal';
+  });
 
   const handleNotesClick = () => {
     setShowNotes(true);
@@ -38,6 +41,7 @@ function App() {
 
   React.useEffect(() => {
     document.body.className = `theme-${theme}`;
+    localStorage.setItem('theme', theme);
   }, [theme]);
 
   React.useEffect(() => {
