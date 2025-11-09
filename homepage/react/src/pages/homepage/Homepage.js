@@ -1,6 +1,7 @@
 import React from 'react';
 import AboutMe from './AboutMe';
 import Projects from './Projects';
+import Experiences from './Experiences';
 import RandomMiraImages from '../../components/RandomMiraImages';
 import ThemeToggle from '../../components/ThemeToggle';
 
@@ -9,7 +10,7 @@ function Homepage({ onNotesClick, theme, setTheme }) {
     <>
       <ThemeToggle currentTheme={theme} onThemeChange={setTheme} />
       <AboutMe onNotesClick={onNotesClick} theme={theme} />
-      <Projects />
+      {theme === 'charcoal' ? <Experiences /> : <Projects />}
       <RandomMiraImages />
     </>
   );

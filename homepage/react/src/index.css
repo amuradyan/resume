@@ -528,3 +528,222 @@ body.theme-charcoal .toggle-emoji-corporate {
   75% { transform: rotate(-2deg); }
   100% { transform: rotate(0deg); }
 }
+
+/* Experiences carousel styles */
+.experiences-container {
+  display: grid;
+  place-items: center;
+  padding-top: 10%;
+  background: transparent;
+  width: 100%;
+  height: auto;
+  gap: 3rem;
+}
+
+.carousel-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 2rem;
+}
+
+.carousel-arrow {
+  background: rgba(255, 255, 255, 0.3);
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  font-size: 3rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: grid;
+  place-items: center;
+  color: #333;
+  font-weight: 300;
+  line-height: 1;
+  padding: 0;
+}
+
+.carousel-arrow:hover {
+  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+}
+
+.carousel-arrow:active {
+  transform: scale(0.95);
+}
+
+.carousel-content {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.carousel-dot:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel-dot.active {
+  width: 24px;
+  height: 12px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Experience card styles */
+.experience-card {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 3rem;
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  min-height: 300px;
+  position: relative;
+  z-index: 1;
+}
+
+.experience-card-left {
+  display: grid;
+  place-items: center;
+}
+
+.experience-logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1rem;
+}
+
+.experience-logo-placeholder {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive carousel styles */
+@media (max-width: 1024px) {
+  .experience-card {
+    grid-template-columns: 150px 1fr;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .experience-logo,
+  .experience-logo-placeholder {
+    width: 120px;
+    height: 120px;
+  }
+
+  .experience-logo-placeholder {
+    font-size: 2.5rem;
+  }
+
+  .carousel-arrow {
+    width: 50px;
+    height: 50px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    grid-template-columns: auto 1fr auto;
+    gap: 1rem;
+  }
+
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    text-align: center;
+  }
+
+  .experience-card-left {
+    order: 1;
+  }
+
+  .experience-card-right {
+    order: 2;
+  }
+
+  .experience-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .carousel-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-arrow {
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+  }
+
+  .carousel-dots {
+    gap: 0.5rem;
+  }
+
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+  }
+
+  .carousel-dot.active {
+    width: 20px;
+    height: 10px;
+  }
+}
