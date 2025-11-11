@@ -11,7 +11,9 @@ function Experiences() {
       logo: "/logos/griddynamics.png",
       role: "Software Engineer",
       period: "08.05.2025 - current",
-      brief: "Maintaining and occasionally adding features to a recommendation engine built on top of PredictionIO in Scala 2 for large e-commerce platforms. Implementing the partial replacement for the engine in Java 21 with Spring Boot. Figuring out the domain and setting up meetings",
+      brief: <>
+        <p>Maintaining and occasionally adding features to a recommendation engine built on top of PredictionIO in Scala 2 for large e-commerce platforms. Implementing the partial replacement for the engine in Java 21 with Spring Boot. Figuring out the domain and setting up meetings</p>
+      </>,
       tech: ["Scala 2", "PredictionIO", "Cats", "Java 21", "GCP"]
     },
     {
@@ -31,7 +33,9 @@ function Experiences() {
       logo: "/logos/qtl.png",
       role: "Consulting engineer",
       period: "01.03.2025 - current",
-      brief: "I help develop and maintain a wide-range printing e-shop. Most of the time I'm in the backend, integrating logistics, adding logs or building images, but occasionally I'll do some coding in the front. Mainly I steer both ends in terms of design and practices.",
+      brief: <>
+        <p>I help develop and maintain a wide-range printing e-shop. Most of the time I'm in the backend, integrating logistics, adding logs or building images, but occasionally I'll do some coding in the front. Mainly I steer both ends in terms of design and practices.</p>
+      </>,
       tech: ["React", "Next.js", "PostgreSQL",]
     },
     {
@@ -42,7 +46,7 @@ function Experiences() {
       brief: <>
         <p>Built plane ticket search module for a big cruise company's reservation system. Maintained well-tested codebase, established CI/CD practices and team processes, and mentored junior developers. Focused on frequent demos for expectation\anxiety management.</p>
 
-        <p>Led a team of 5 for a few months before leaving the company. To mitigate occasional misunderstanding and later system failures, we decided to resort to pair programming /also solves the review bottleneck/ and early-on inclusive requirement gathering. Unfortunately, we were not able to sustain such practices at an acceptable pace for long enough. Nevertheless, the team was able to maintain a deliverable flow suiting the needs at the moment.</p>
+        <p>Led a team of 5 for a few months. To mitigate occasional misunderstanding and later system failures, we decided to resort to pair programming and early-on inclusive requirement gathering. Unfortunately, we were not able to sustain such practices at an acceptable pace for long enough, but the team was able to maintain a deliverable flow suiting the needs at the moment.</p>
       </>,
       tech: ["Scala 2.13", "Akka", "Play", "tAPIr", "AWS SQS", "IBM MQ", "Cats"]
     },
@@ -52,7 +56,7 @@ function Experiences() {
       role: "Technical Trainer",
       period: "01.03.2020 - 01.06.2022",
       brief: <>
-        <p>Designed and implemented testing frameworks for a group of similar online shops, evolving from raw Selenium to well-structured SerenityBDD /required 3 rewrites/, integrated with Browserstack for cross-platform testing. Led training courses and mentored junior colleagues, developing toy projects for hands-on learning, established an internal wiki practice /deteriorated/.</p>
+        <p>Designed and implemented testing frameworks for a group of similar online shops, evolving from raw Selenium to well-structured SerenityBDD /required 3 rewrites/, integrated with Browserstack for cross-platform testing. Led training courses and mentored junior colleagues by developing toy projects for hands-on learning.</p>
 
         <p>Pleasantly surprised to learn that a team of 2, given enough time and rigid practices, can get to a <span style={{ cursor: 'pointer', textDecoration: 'underline' }} onClick={() => setImagePopup('/board-of-1s.jpg')}>board with just 1-2 pointers</span>. <b>!</b> Note that the points are not the time it takes to do the task, but rather how well we understand what we shall do - a <i>smoothness</i> coefficient of a sort.</p>
       </>,
@@ -63,7 +67,9 @@ function Experiences() {
       logo: "/logos/freelance.png",
       role: "Backend Developer",
       period: "01.02.2018 - 01.03.2020",
-      brief: "Built ticker data aggregator from MetaTrader4 vendors in Scala and MQL. Processed financial data from Excel workbooks, normalizing and exporting to PDF. Implemented tests for collateralized loan obligations framework.",
+      brief: <>
+        <p>Built ticker data aggregator from MetaTrader4 vendors in Scala and MQL. Processed financial data from Excel workbooks, normalizing and exporting to PDF. Implemented tests for collateralized loan obligations framework.</p>
+      </>,
       tech: ["Scala", "Akka HTTP", "MQL", "Python", "Cython"]
     },
     {
@@ -71,7 +77,9 @@ function Experiences() {
       logo: "/logos/praddicts.png",
       role: "Co-founder & Senior Developer",
       period: "11.11.2016 - 01.02.2018",
-      brief: "Co-founded social betting platform. Designed and maintained REST API, integrated third-party data sources. Worked across the stack with Java, Scala, and various technologies. Learned entrepreneurial lessons alongside technical growth.",
+      brief: <>
+        <p>Co-founded social betting platform. Designed and maintained REST API, integrated third-party data sources. Worked across the stack with Java, Scala, and various technologies. Learned entrepreneurial lessons alongside technical growth.</p>
+      </>,
       tech: ["Java", "Scala", "Spring", "PostgreSQL", "MongoDB", "Apache Spark", "Kafka"]
     },
     {
@@ -79,7 +87,9 @@ function Experiences() {
       logo: "/logos/scdm.png",
       role: "Senior Software Developer",
       period: "11.11.2014 - 11.11.2016",
-      brief: "Securities valuation system processing data from multiple sources. Integrated finmath library for inflation bonds valuation. Built UI tools for asset valuation. Close collaboration with Frankfurt-based client for domain modeling.",
+      brief: <>
+        <p>Securities valuation system processing data from multiple sources. Integrated finmath library for inflation bonds valuation. Built UI tools for asset valuation. Close collaboration with Frankfurt-based client for domain modeling.</p>
+      </>,
       tech: ["Java EE", "Oracle DB", "PL/SQL", "JSP"]
     },
     {
@@ -87,7 +97,9 @@ function Experiences() {
       logo: "/logos/freelance2.png",
       role: "Software Developer",
       period: "01.09.2009 - 11.11.2014",
-      brief: "Employee database in C#/MySQL. Chat module in Objective-C based on XMPP protocol (Facebook chat, GTalk). Media player with 360 plugin based on VLC using Qt and C++. Custom installer with crypto plugins in NSIS.",
+      brief: <>
+        <p>Employee database in C#/MySQL. Chat module in Objective-C based on XMPP protocol (Facebook chat, GTalk). Media player with 360 plugin based on VLC using Qt and C++. Custom installer with crypto plugins in NSIS.</p>
+      </>,
       tech: ["C#", "C++", "Objective-C", "MySQL", "XMPP", "Qt"]
     },
     {
@@ -95,7 +107,9 @@ function Experiences() {
       logo: "/logos/hitegrity.png",
       role: "Software Developer",
       period: "01.12.2007 - 01.09.2009",
-      brief: "Ported OmniTrust Protected Browser to 64-bit. Implemented notes and highlighters for Castelle FaxPress editor. Participated in ProtectFile project for SafeNet-Inc.",
+      brief: <>
+        <p>Ported OmniTrust Protected Browser to 64-bit. Implemented notes and highlighters for Castelle FaxPress editor. Participated in ProtectFile project for SafeNet-Inc.</p>
+      </>,
       tech: ["C/C++", "COM", "DCOM"]
     },
     {
@@ -103,7 +117,9 @@ function Experiences() {
       logo: "/logos/westsoft.png",
       role: "Software Developer",
       period: "01.07.2007 - 01.12.2007",
-      brief: "Designed and implemented ORM for MySQL/C++ for ERP application. Built library for custom report generation in rich text format.",
+      brief: <>
+        <p>Designed and implemented ORM for MySQL/C++ for ERP application. Built library for custom report generation in rich text format.</p>
+      </>,
       tech: ["C++", "ATL", "STL", "MySQL"]
     },
     {
@@ -111,7 +127,9 @@ function Experiences() {
       logo: "/logos/smarttech.png",
       role: "Software Developer",
       period: "25.12.2006 - 21.06.2007",
-      brief: "Integration for Armenian banks with ARCA card processing system. First job working with Erlang ecosystem, running on BSDs with functional programming approach. Fortunate start to a career.",
+      brief: <>
+        <p>Integration for Armenian banks with ARCA card processing system. First job working with Erlang ecosystem, running on BSDs with functional programming approach. Fortunate start to a career.</p>
+      </>,
       tech: ["Erlang", "Mnesia", "Yaws"]
     }
   ];
