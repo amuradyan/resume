@@ -3,6 +3,7 @@ import ExperienceCard from './ExperienceCard';
 
 function Experiences() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [imagePopup, setImagePopup] = useState(null);
 
   const experiences = [
     {
@@ -10,31 +11,39 @@ function Experiences() {
       logo: "/logos/griddynamics.png",
       role: "Software Engineer",
       period: "08.05.2025 - current",
-      brief: "Supporting a recommendation engine in Scala 2 on PredictionIO for large e-commerce platforms, extending the API for a more granular search. Documenting behavior in an effort to later write the next version of the service in Java 21, prototyping APIs, setting up meetings.",
-      tech: ["Scala 2", "PredictionIO", "Java 21"]
+      brief: "Maintaining and occasionally adding features to a recommendation engine built on top of PredictionIO in Scala 2 for large e-commerce platforms. Implementing the partial replacement for the engine in Java 21 with Spring Boot. Figuring out the domain and setting up meetings",
+      tech: ["Scala 2", "PredictionIO", "Cats", "Java 21", "GCP"]
     },
     {
       company: "TUMO Yerevan",
       logo: "/logos/tumo.png",
       role: "Workshop Leader",
       period: "01.05.2025 - 31.05.2025",
-      brief: "A workshop for high school students on building programming language. Shvi, the language, is inspired by LISP and is a simple notation for writing music. During the workshop, students moved through each step, supported with reading material and guided by tests, gradually adding features and building a simple interpreter.",
+      brief: <>
+        <p>A workshop for high school students on building programming languages. <a href="https://github.com/amuradyan/shvi" target="_blank" rel="noopener noreferrer">Shvi</a>, the language, is inspired by LISP and is a simple notation for writing music. During the workshop, students moved through each step, supported with reading material and guided by tests, gradually adding features and building a simple interpreter. This later got its' spinoff - <a href="https://lyre.amuradyan.am" target="_blank" rel="noopener noreferrer">Lyre</a></p>
+
+        <p>Realized I need to break the course into smaller steps and provide proper JS bootstrapping. Extra exercises will also keep those who lag on domain, progress in JS, feeling present in class. Once again learned, that if I really like recursion, others might not.</p>
+      </>,
       tech: ["JavaScript", "Deno", "LISP"]
     },
     {
-      company: "Freelance",
-      logo: "/logos/freelance.png",
-      role: "Full-stack & Backend Developer",
-      period: "01.08.2024 - 08.05.2025",
-      brief: "Python scraper for Armenian laws and regulations. Scala 3 e-shop scraper with Telegram frontend for hot deals. Full-stack print shop in React/Next.js with PostgreSQL, focusing on code quality and maintainability.",
-      tech: ["Python", "Scala 3", "React", "Next.js", "PostgreSQL", "Telegram Bot API"]
+      company: "Quality Testing Lab",
+      logo: "/logos/qtl.png",
+      role: "Consulting engineer",
+      period: "01.03.2025 - current",
+      brief: "I help develop and maintain a wide-range printing e-shop. Most of the time I'm in the backend, integrating logistics, adding logs or building images, but occasionally I'll do some coding in the front. Mainly I steer both ends in terms of design and practices.",
+      tech: ["React", "Next.js", "PostgreSQL",]
     },
     {
       company: "DataArt Armenia",
       logo: "/logos/dataart.png",
-      role: "Senior Scala Engineer & Team Lead",
+      role: "Scala Engineer & Team Lead",
       period: "04.04.2022 - 18.07.2024",
-      brief: "Built plane ticket search module for travel industry cruise reservation system. Led team of 5 for 3 months, managing central modules. Maintained well-tested codebase, established CI/CD practices, and mentored junior developers. Focused on code quality, frequent demos, and team processes.",
+      brief: <>
+        <p>Built plane ticket search module for a big cruise company's reservation system. Maintained well-tested codebase, established CI/CD practices and team processes, and mentored junior developers. Focused on frequent demos for expectation\anxiety management.</p>
+
+        <p>Led a team of 5 for a few months before leaving the company, managing central modules. To mitigate occasional misunderstanding and later failures, we decided to resort to pair programming /also solves the review bottleneck/ and a clearer information flow via more inclusive requirement gathering. Unfortunately, we were not able to sustain such practices at an acceptable pace for long enough. Nevertheless, the team was able to maintain a deliverable flow suiting the needs at the moment.</p>
+      </>,
       tech: ["Scala 2.13", "Akka", "Play", "tAPIr", "AWS SQS", "IBM MQ", "Cats"]
     },
     {
@@ -42,7 +51,11 @@ function Experiences() {
       logo: "/logos/qtl.png",
       role: "Technical Trainer",
       period: "01.03.2020 - 01.06.2022",
-      brief: "Designed and implemented testing frameworks for online shops, evolving from Selenium to SerenityBDD. Integrated with Browserstack for cross-platform testing. Led training courses and mentored junior colleagues, developing toy projects for hands-on learning.",
+      brief: <>
+        <p>Designed and implemented testing frameworks for a group of similar online shops, evolving from raw Selenium to well-structured SerenityBDD /required 3 rewrites/, integrated with Browserstack for cross-platform testing. Led training courses and mentored junior colleagues, developing toy projects for hands-on learning, established an internal wiki practice /deteriorated/.</p>
+
+        <p>Pleasantly surprised to learn that a team of 2, given enough time and rigid practices, can get to a <span style={{ cursor: 'pointer', textDecoration: 'underline' }} onClick={() => setImagePopup('/board-of-1s.jpg')}>board with just 1-2 pointers</span>. <b>!</b> Note that the points are not the time it takes to do the task, but rather how well we understand what we shall do - a <i>smoothness</i> coefficient of a sort.</p>
+      </>,
       tech: ["Java 8", "SerenityBDD", "Cucumber", "Selenium", "Browserstack"]
     },
     {
@@ -164,6 +177,35 @@ function Experiences() {
           />
         ))}
       </div>
+
+      {imagePopup && (
+        <div
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 1000,
+            cursor: 'pointer'
+          }}
+          onClick={() => setImagePopup(null)}
+        >
+          <img
+            src={imagePopup}
+            alt="Board with 1-pointers"
+            style={{
+              maxWidth: '90%',
+              maxHeight: '90%',
+              objectFit: 'contain'
+            }}
+          />
+        </div>
+      )}
     </div>
   );
 }

@@ -4,7 +4,6 @@ import ProfileHeader from '../../components/ProfileHeader';
 function AboutMe({ onNotesClick, theme }) {
   const personalContent = (
     <>
-      <h2>Hello, I'm Andranik!</h2>
       <p>
         I enjoy programming and am particularly interested in programming languages and systems /currently into Lisps/. I write programs both for fun and commercially. Every now and then I'll take up teaching, volunteered at my uni for quite some time, might give a talk. You can read my notes by clicking the <a href="https://starwars.fandom.com/wiki/Holocron" target="_blank" rel="noopener noreferrer"><i>holocron</i></a>.
       </p>
@@ -21,7 +20,6 @@ function AboutMe({ onNotesClick, theme }) {
 
   const corporateContent = (
     <>
-      <h2>Andranik Muradyan</h2>
       <p>
         Software engineer with 18+ years of experience across the full spectrum of software development, from low-level C/C++ to modern functional programming with Scala. Currently supporting recommendation engines at Grid Dynamics while maintaining a strong focus on code quality, testing practices, and team collaboration.
       </p>
@@ -47,6 +45,8 @@ function AboutMe({ onNotesClick, theme }) {
         </div>
       </div>
       <div className="aboutme-right">
+        <h2>Hello, I'm Andranik!</h2>
+
         {theme === 'charcoal' ? corporateContent : personalContent}
       </div>
     </div>
