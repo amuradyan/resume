@@ -42,15 +42,19 @@ function ExperienceCard({ company, logo, role, period, brief, tech }) {
         )}
       </div>
       <div className="experience-card-right">
-        <Typography variant="h5" sx={{ fontWeight: 600, marginBottom: 1 }}>
-          {role}
-        </Typography>
-        <Typography variant="h6" sx={{ color: 'text.secondary', marginBottom: 1 }}>
-          {company}
-        </Typography>
-        <Typography sx={{ color: 'text.secondary', marginBottom: 2, fontSize: '0.9rem' }}>
-          {period}
-        </Typography>
+        <div className="experience-card-header">
+          <div>
+            <Typography variant="h5" sx={{ fontWeight: 600, marginBottom: 1 }}>
+              {role}
+            </Typography>
+            <Typography variant="h6" sx={{ color: 'text.secondary', marginBottom: 1 }}>
+              {company}
+            </Typography>
+          </div>
+          <Typography sx={{ color: 'text.secondary', fontSize: '0.9rem', whiteSpace: 'nowrap' }}>
+            {period}
+          </Typography>
+        </div>
         <Typography sx={{ marginBottom: 2, lineHeight: 1.6 }}>
           {brief}
         </Typography>

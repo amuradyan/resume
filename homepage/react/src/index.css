@@ -672,6 +672,14 @@ body.theme-charcoal .toggle-emoji-corporate {
   justify-content: center;
 }
 
+.experience-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
 /* Responsive carousel styles */
 @media (max-width: 1024px) {
   .experience-card {
@@ -715,6 +723,12 @@ body.theme-charcoal .toggle-emoji-corporate {
 
   .experience-card-right {
     order: 2;
+  }
+
+  .experience-card-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .experience-logo {
