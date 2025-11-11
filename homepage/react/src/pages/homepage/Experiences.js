@@ -20,7 +20,7 @@ function Experiences() {
       role: "Workshop Leader",
       period: "01.05.2025 - 31.05.2025",
       brief: <>
-        <p>A workshop for high school students on building programming languages. <a href="https://github.com/amuradyan/shvi" target="_blank" rel="noopener noreferrer">Shvi</a>, the language, is inspired by LISP and is a simple notation for writing music. During the workshop, students moved through each step, supported with reading material and guided by tests, gradually adding features and building a simple interpreter. This later got its' spinoff - <a href="https://lyre.amuradyan.am" target="_blank" rel="noopener noreferrer">Lyre</a></p>
+        <p>A workshop for high school students on building programming languages. <a href="https://github.com/amuradyan/shvi" target="_blank" rel="noopener noreferrer">Shvi</a>, the language, is inspired by LISP and is a simple notation for writing music. Students moved through each step, supported with reading material and unit tests, gradually adding features and building a simple interpreter. This later got its' spinoff - <a href="https://lyre.amuradyan.am" target="_blank" rel="noopener noreferrer">Lyre</a></p>
 
         <p>Realized I need to break the course into smaller steps and provide proper JS bootstrapping. Extra exercises will also keep those who lag on domain, progress in JS, feeling present in class. Once again learned, that if I really like recursion, others might not.</p>
       </>,
@@ -42,7 +42,7 @@ function Experiences() {
       brief: <>
         <p>Built plane ticket search module for a big cruise company's reservation system. Maintained well-tested codebase, established CI/CD practices and team processes, and mentored junior developers. Focused on frequent demos for expectation\anxiety management.</p>
 
-        <p>Led a team of 5 for a few months before leaving the company, managing central modules. To mitigate occasional misunderstanding and later failures, we decided to resort to pair programming /also solves the review bottleneck/ and a clearer information flow via more inclusive requirement gathering. Unfortunately, we were not able to sustain such practices at an acceptable pace for long enough. Nevertheless, the team was able to maintain a deliverable flow suiting the needs at the moment.</p>
+        <p>Led a team of 5 for a few months before leaving the company. To mitigate occasional misunderstanding and later system failures, we decided to resort to pair programming /also solves the review bottleneck/ and early-on inclusive requirement gathering. Unfortunately, we were not able to sustain such practices at an acceptable pace for long enough. Nevertheless, the team was able to maintain a deliverable flow suiting the needs at the moment.</p>
       </>,
       tech: ["Scala 2.13", "Akka", "Play", "tAPIr", "AWS SQS", "IBM MQ", "Cats"]
     },
@@ -84,7 +84,7 @@ function Experiences() {
     },
     {
       company: "Freelance",
-      logo: "/logos/freelance.png",
+      logo: "/logos/freelance2.png",
       role: "Software Developer",
       period: "01.09.2009 - 11.11.2014",
       brief: "Employee database in C#/MySQL. Chat module in Objective-C based on XMPP protocol (Facebook chat, GTalk). Media player with 360 plugin based on VLC using Qt and C++. Custom installer with crypto plugins in NSIS.",
