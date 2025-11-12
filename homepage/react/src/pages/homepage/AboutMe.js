@@ -21,15 +21,23 @@ function AboutMe({ onNotesClick, theme }) {
   const corporateContent = (
     <>
       <p>
-        Software engineer with 18+ years of experience across the full spectrum of software development, from low-level C/C++ to modern functional programming with Scala. Currently supporting recommendation engines at Grid Dynamics while maintaining a strong focus on code quality, testing practices, and team collaboration.
+        I have been programming for about two decades. During that time, I've worked on both legacy projects /including one I'm maintaining currently/ and designed modules and systems from scratch - solo, in teams, and leading them. While I've worked across various domains, my longest experience is in fintech.
       </p>
 
       <p>
-        Core expertise in JVM ecosystem (Scala, Java), functional programming (Cats, Akka), and building robust backend systems. Led teams, mentored developers, and established engineering practices that balance technical excellence with pragmatic delivery. Equally comfortable diving deep into complex domains or teaching high schoolers to build their first programming language.
+        I started with C/C++ but gradually moved to C#/Java, got into functional programming and moved to Scala, and now I'm big into Lisps and Clojure.
       </p>
 
       <p>
-        Available for consulting, contracting, or full-time roles. Contact me at <a href="mailto:andranik@amuradyan.am"><i>andranik [at] amuradyan [dot] am</i></a>.
+        Through both my private practice and enterprise work, I've come to avoid deep forward planning on both scope and abstractions, and get to development right away. By starting with the <i>reasonably</i> simplest useful scenario and building just for that, then iteratively growing different aspects of the system, I've been able to deliver my best working systems. I prefer small bespoke tools over dependencies - something AI has made even more comfortable now.
+      </p>
+
+      <p>
+        Beyond development, I've taught at universities, workshops, and training sessions, and I genuinely enjoy the process. Teaching has taught me that a well-structured syllabus is essential - it sets goals, provides a visible path forward, and offers a way to check if we've reached our objectives. Equally important are exercises, which help skills take root.
+      </p>
+
+      <p>
+        If you think I can be of help, you can contact me at <a href="mailto:andranik@amuradyan.am"><i>andranik [at] amuradyan [dot] am</i></a>.
       </p>
     </>
   );

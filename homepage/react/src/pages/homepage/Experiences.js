@@ -12,7 +12,7 @@ function Experiences() {
       role: "Software Engineer",
       period: "08.05.2025 - current",
       brief: <>
-        <p>Maintaining and occasionally adding features to a recommendation engine built on top of PredictionIO in Scala 2 for large e-commerce platforms. Implementing the partial replacement for the engine in Java 21 with Spring Boot. Figuring out the domain and setting up meetings</p>
+        <p>Maintaining and occasionally adding features to a recommendation engine built on top of PredictionIO in Scala 2 for large e-commerce platforms. Implementing the partial replacement for the engine in Java 21 with Spring Boot. Figuring out the domain via use-cases /AI ftw!/ and setting up meetings.</p>
       </>,
       tech: ["Scala 2", "PredictionIO", "Cats", "Java 21", "GCP"]
     },
@@ -22,9 +22,7 @@ function Experiences() {
       role: "Workshop Leader",
       period: "01.05.2025 - 31.05.2025",
       brief: <>
-        <p>A workshop for high school students on building programming languages. <a href="https://github.com/amuradyan/shvi" target="_blank" rel="noopener noreferrer">Shvi</a>, the language, is inspired by LISP and is a simple notation for writing music. Students moved through each step, supported with reading material and unit tests, gradually adding features and building a simple interpreter. This later got its' spinoff - <a href="https://lyre.amuradyan.am" target="_blank" rel="noopener noreferrer">Lyre</a></p>
-
-        <p>Realized I need to break the course into smaller steps and provide proper JS bootstrapping. Extra exercises will also keep those who lag on domain, progress in JS, feeling present in class. Once again learned, that if I really like recursion, others might not.</p>
+        <p>A workshop for high school students on building programming languages. <a href="https://github.com/amuradyan/shvi" target="_blank" rel="noopener noreferrer">Shvi</a>, the language, is inspired by LISP and is a simple notation for writing music. Students moved through each step, supported with reading material and unit tests, gradually adding features and building a simple interpreter. This later got its' spinoff - <a href="https://lyre.amuradyan.am" target="_blank" rel="noopener noreferrer">Lyre</a>.</p>
       </>,
       tech: ["JavaScript", "Deno", "LISP"]
     },
