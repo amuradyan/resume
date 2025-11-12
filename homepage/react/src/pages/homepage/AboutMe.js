@@ -5,11 +5,13 @@ function AboutMe({ onNotesClick, theme }) {
   const personalContent = (
     <>
       <p>
-        I enjoy programming and am particularly interested in programming languages and systems /currently into Lisps/. I write programs both for fun and commercially. Every now and then I'll take up teaching, volunteered at my uni for quite some time, might give a talk. You can read my notes by clicking the <a href="https://starwars.fandom.com/wiki/Holocron" target="_blank" rel="noopener noreferrer"><i>holocron</i></a>.
+        I enjoy programming and am particularly interested in programming languages and systems /currently into Lisps/. I write programs both for fun and commercially. Every now and then I'll take up teaching, volunteered at my uni for quite some time, might give a talk. Right now working actively on Lyre - a musical lisp.
       </p>
 
+      <p>On a non-engineering note, I really enjoy cooking - particularly it's short feedback loop /unlike software/, and plan on moving to Argentina with my wife and our cat.</p>
+
       <p>
-        If you decide to contact me, you can ping me at mastodon or email me at <a href="mailto:andranik@amuradyan.am"><i>andranik [at] amuradyan [dot] am</i></a>.
+        You can read my notes by clicking the <a href="https://starwars.fandom.com/wiki/Holocron" target="_blank" rel="noopener noreferrer"><i>holocron</i></a>. If you decide to contact me, you can ping me at mastodon or email me at <a href="mailto:andranik@amuradyan.am"><i>andranik [at] amuradyan [dot] am</i></a>.
       </p>
 
       <p>
@@ -21,11 +23,7 @@ function AboutMe({ onNotesClick, theme }) {
   const corporateContent = (
     <>
       <p>
-        I have been programming for about two decades. During that time, I've worked on both legacy projects /including one I'm maintaining currently/ and designed modules and systems from scratch - solo, in teams, and leading them. While I've worked across various domains, my longest experience is in fintech.
-      </p>
-
-      <p>
-        I started with C/C++ but gradually moved to C#/Java, got into functional programming and moved to Scala, and now I'm big into Lisps and Clojure.
+        I have been programming for about two decades. During that time, I've worked on both legacy projects /including one I'm maintaining currently/ and designed modules and systems from scratch - solo, in teams, and leading them. While I've worked across various domains, my longest experience is in fintech. Language-wise I started with C/C++ but gradually moved to C#/Java, got into functional programming and moved to Scala, and now I'm big into Lisps /Clojure/.
       </p>
 
       <p>
