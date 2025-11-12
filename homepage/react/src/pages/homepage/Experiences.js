@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import ExperienceCard from './ExperienceCard';
 
 function Experiences() {
@@ -136,17 +136,33 @@ function Experiences() {
     setCurrentIndex(index);
   };
 
-  const goToPrevious = () => {
+  const goToPrevious = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? experiences.length - 1 : prevIndex - 1
     );
-  };
+  }, [experiences.length]);
 
-  const goToNext = () => {
+  const goToNext = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === experiences.length - 1 ? 0 : prevIndex + 1
     );
-  };
+  }, [experiences.length]);
+
+  useEffect(() => {
+    const handleKeyDown = (event) => {
+      if (event.key === 'ArrowLeft') {
+        goToPrevious();
+      } else if (event.key === 'ArrowRight') {
+        goToNext();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [goToPrevious, goToNext]);
 
   return (
     <div className="experiences-container">
