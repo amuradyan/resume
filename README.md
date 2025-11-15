@@ -59,7 +59,7 @@ A shop, providing a wide range of printing services, like stickers, boxes, print
 
 **Tech used:** Scala 2.13, Akka, Play, tAPIr, AWS SQS, IBM MQ, Cats
 
-Built plane ticket search module for a big cruise company's reservation system. Maintained well-tested codebase, established CI/CD practices and team processes, and mentored junior developers. Focused on frequent demos for expectation\anxiety management.
+Built plane ticket search module for a big cruise company's reservation system. Maintained well-tested codebase, established CI/CD practices and team processes, and mentored junior developers. Focused on frequent demos for expectation\\anxiety management.
 
 Led a team of 5 for a few months. To mitigate occasional misunderstanding and later system failures, we decided to resort to pair programming and early-on inclusive requirement gathering. Unfortunately, we were not able to sustain such practices at an acceptable pace for long enough, but the team was able to maintain a deliverable flow suiting the needs at the moment.
 
