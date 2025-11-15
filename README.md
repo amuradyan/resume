@@ -11,15 +11,25 @@
 
 08.05.2025 - current
 
-Supporting a recommendation engine in Scala 2 on PredictionIO for large e-commerce platforms, extending the API for a more granular search. Documenting behavior in an effort to later write the next version of the service in Java 21, prototyping APIs, setting up meetings.
+**Tech used:** Scala 2, PredictionIO, Cats, Java 21, GCP
+
+Maintaining and occasionally adding features to a recommendation engine built on top of PredictionIO in Scala 2 for large e-commerce platforms. Implementing the partial replacement for the engine in Java 21 with Spring Boot. Figuring out the domain via use-cases /AI ftw!/ and setting up meetings.
 
 ### Workshop leader - [TUMO Yerevan](https://tumo.org)
 
 01.05.2025 - 31.05.2025
 
-**Tech used:** JS, Deno
+**Tech used:** JavaScript, Deno, LISP
 
-A workshop for high school students on building programming language. [Shvi](https://github.com/amuradyan/shvi/tree/master/shvi), the language, is inspired by LISP and is a simple notation for writing music. During the workshop, students moved through each step, supported with reading material and guided by tests, gradually adding features and building a simple interpreter. The course is designed in a way that each step produces a tangible result in the real world - sounds in our case. It is open-ended from some point, to allow for creativity and exploration both musically and engineering wise /some students added vibratos and lambdas/.
+A workshop for high school students on building programming languages. [Shvi](https://github.com/amuradyan/shvi), the language, is inspired by LISP and is a simple notation for writing music. Students moved through each step, supported with reading material and unit tests, gradually adding features and building a simple interpreter. This later got its' spinoff - [Lyre](https://lyre.amuradyan.am).
+
+### Consulting engineer - Quality Testing Lab
+
+01.03.2025 - current
+
+**Tech used:** React, Next.js, PostgreSQL
+
+I help develop and maintain a wide-range printing e-shop. Most of the time I'm in the backend, integrating logistics, adding logs or building images, but occasionally I'll do some coding in the front. Mainly I steer both ends in terms of design and practices.
 
 ### Freelance
 
@@ -43,83 +53,81 @@ Scraping certain e-shops for hot deals and sales. The frontend for this project 
 
 A shop, providing a wide range of printing services, like stickers, boxes, prints on clothes, etc. The project is in the late stages of development and needs supervision and some refactoring. The main goal is to make the code more readable and maintainable.
 
-### Senior Scala engineer - [DataArt Armenia](https://www.dataart.com)
+### Scala engineer & team lead - [DataArt Armenia](https://www.dataart.com)
 
 04.04.2022 - 18.07.2024
 
 **Tech used:** Scala 2.13, Akka, Play, tAPIr, AWS SQS, IBM MQ, Cats
 
-Overall I've spent about two years in two teams on a project in travel industry, automating cruise reservation flows across multiple agents and elements.
+Built plane ticket search module for a big cruise company's reservation system. Maintained well-tested codebase, established CI/CD practices and team processes, and mentored junior developers. Focused on frequent demos for expectation\anxiety management.
 
-My main contribution to the project was a module to search plane tickets. I've managed to maintain a well-tested and coherent codebase and an structured repository, and learned that frequent demos calm the worried mind and help avoiding *dirty* estimates. Our team was able to experiment and agree on what's good or bad, so we were able to affect our modules of the project both technically /code style and structure, tooling, practices/ and process-wise /CI\\CD, branching strategy, code review, .../.
-
-Soon after, I took up the role of the **team lead** of a team of five /team 1/ and led it for three months. The team was in charge of several modules central to the operation, both semantically and topologically. I tried to get *better code reviews* via pair programming and a *clearer* information flow via more inclusive requirement gathering in attempt to address system correctness issues. These, along with a few others ideas, did not work out due to different socioeconomic reasons. Nevertheless, the team was able to maintain a deliverable flow suiting the needs at the moment.
-
-For the last two months, I've been primarily engaged in maintenance tasks, frequently collaborating with a colleague.
+Led a team of 5 for a few months. To mitigate occasional misunderstanding and later system failures, we decided to resort to pair programming and early-on inclusive requirement gathering. Unfortunately, we were not able to sustain such practices at an acceptable pace for long enough, but the team was able to maintain a deliverable flow suiting the needs at the moment.
 
 ### Technical Trainer - Quality Testing Lab
 
 01.03.2020 - 01.06.2022
 
-**Tech used:** Java/8/ as the main programming language, SerenityBDD, Gherkin, Cucumber, Selenium, Browserstack
+**Tech used:** Java 8, SerenityBDD, Cucumber, Selenium, Browserstack
 
-**Tasks:** Design and implementation of a number of testing frameworks for online shops. Started as simple Selenium tests and gradually moved to SerenityBDD. Compilation of Gherkin scenarios from user requirements. Integration with Browserstack․ Development of toy projects in Java for exercising with juniors.
+Designed and implemented testing frameworks for a group of similar online shops, evolving from raw Selenium to well-structured SerenityBDD /required 3 rewrites/, integrated with Browserstack for cross-platform testing. Led training courses and mentored junior colleagues by developing toy projects for hands-on learning.
 
-### Freelance
+Pleasantly surprised to learn that a team of 2, given enough time and rigid practices, can get to a board with just 1-2 pointers. Note that the points are not the time it takes to do the task, but rather how well we understand what we shall do - a *smoothness* coefficient of a sort.
+
+### Backend Developer - Freelance
 
 01.02.2018 - 01.03.2020
 
-**Tech used:** Scala, Akka HTTP, MQL, Javascript, Python, Cython
+**Tech used:** Scala, Akka HTTP, MQL, Python, Cython
 
-**Tasks:** Design and implementation of the backend for a ticker data aggregator from different MetaTrader4 vendors in Scala and MQL, processing Excel workbooks with financial data from different providers /normalization, exporting to PDF/ in Python. Validation of a framework for testing collateralized loan obligations and implementation of tests for CLOs in that framework.
+Built ticker data aggregator from MetaTrader4 vendors in Scala and MQL. Processed financial data from Excel workbooks, normalizing and exporting to PDF. Implemented tests for collateralized loan obligations framework.
 
-### Co-founder and senior developer - Praddicts CJSC
+### Co-founder & Senior Developer - Praddicts
 
 11.11.2016 - 01.02.2018
 
-**Tech used:** Java as the main programming language, Scala, JavaScript. Spring, PostgreSQL, MongoDB, Apache Spark, Apache Kafka, JenkinsCI, RabbitMQ
+**Tech used:** Java, Scala, Spring, PostgreSQL, MongoDB, Apache Spark, Kafka
 
-**Tasks:** Design and maintenance of a REST API. Integration of third-party data sources. Doing all sorts of small things with techs above.
+Co-founded social betting platform. Designed and maintained REST API, integrated third-party data sources. Worked across the stack with Java, Scala, and various technologies. Learned entrepreneurial lessons alongside technical growth.
 
-### Senior software developer - SCDM
+### Senior Software Developer - SCDM
 
 11.11.2014 - 11.11.2016
 
-**Tech used:** Java as the main programming language. Java EE, Oracle RDBMS /PL SQL/, JSP
+**Tech used:** Java EE, Oracle DB, PL/SQL, JSP
 
-**Tasks:** Integration with a finmath library of a peculiar design. Integration with a number of asset-related data providers. Database design and development.
+Securities valuation system processing data from multiple sources. Integrated finmath library for inflation bonds valuation. Built UI tools for asset valuation. Close collaboration with Frankfurt-based client for domain modeling.
 
-### Freelance every now and then
+### Software Developer - Freelance
 
 01.09.2009 - 11.11.2014
 
-**Tech used:** C#, C++, Objective-C, NSIS, MySQL
+**Tech used:** C#, C++, Objective-C, MySQL, XMPP, Qt
 
-**Tasks:** Employee DB /MySQL/ in C#. Chat module in Objective-C based on XMPP protocol /Facebook chat, GTalk, custom chat with configurable XMPP settings/. Media player with a 360 plugin based on VLC using QT and C++. Installer with crypto plugins in NSIS for the player.
+Employee database in C#/MySQL. Chat module in Objective-C based on XMPP protocol /Facebook chat, GTalk/. Media player with 360 plugin based on VLC using Qt and C++. Custom installer with crypto plugins in NSIS.
 
-### Software developer - Hitegrity LLC
+### Software Developer - Hitegrity
 
 01.12.2007 - 01.09.2009
 
-**Tech used:** C/C++ as the main programming languages /COM, DCOM/
+**Tech used:** C/C++, COM, DCOM
 
-**Tasks:** Porting OmniTrust Protected Browser project to 64 bit. Implementation of features such as notes and highlighters for the editor of Castelle’s FaxPress project. Participated in the ProtectFile project for SafeNet-Inc.
+Ported OmniTrust Protected Browser to 64-bit. Implemented notes and highlighters for Castelle FaxPress editor. Participated in ProtectFile project for SafeNet-Inc.
 
-### Software developer - WestSoft LTD
+### Software Developer - WestSoft
 
 01.07.2007 - 01.12.2007
 
-**Tech used:** C++ as the main programming language /ATL, STL/, MySQL
+**Tech used:** C++, ATL, STL, MySQL
 
-**Tasks:** Design and implementation of an ORM for MySQL\\C++ for an ERP application /early stages/. Library for custom report generation in rich text format.
+Designed and implemented ORM for MySQL/C++ for ERP application. Built library for custom report generation in rich text format.
 
-### Software developer - Smart-Tech LTD
+### Software Developer - Smart-Tech
 
 25.12.2006 - 21.06.2007
 
-**Tech used:** Erlang as the main programming language, Mnesia as DB, Yaws as webserver
+**Tech used:** Erlang, Mnesia, Yaws
 
-**Tasks:** Integration for a number of Armenian banks with ARCA card processing.
+Integration for Armenian banks with ARCA card processing system. First job working with Erlang ecosystem, running on BSDs with functional programming approach. Fortunate start to a career.
 
 ## Education
 
