@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths:
-      - "homepage/react/**"
+      - "homepage/**"
   repository_dispatch:
     types: [pdf-generated]
 
@@ -24,16 +24,16 @@ jobs:
 
       - name: Install dependencies
         run: |
-          cd homepage/react
+          cd homepage
           npm install
 
       - name: Copy AndranikMuradyan.pdf to public folder
         run: |
-          cp AndranikMuradyan.pdf homepage/react/public/
+          cp AndranikMuradyan.pdf homepage/public/
 
       - name: Build the homepage
         run: |
-          cd homepage/react
+          cd homepage
           npm run build
 
       - name: Set up SSH Agent
@@ -43,4 +43,4 @@ jobs:
 
       - name: Deploy to EC2
         run: |
-          scp -r -o StrictHostKeyChecking=no homepage/react/build/* ${{ secrets.USERNAME }}@${{ secrets.REMOTE_HOST }}:/var/www/amuradyan
+          scp -r -o StrictHostKeyChecking=no homepage/build/* ${{ secrets.USERNAME }}@${{ secrets.REMOTE_HOST }}:/var/www/amuradyan
