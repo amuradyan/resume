@@ -37,21 +37,19 @@ I help develop and maintain a wide-range printing e-shop. Most of the time I'm i
 
 #### Scrapper in Python
 
+<!-- -->
+
 **Tech used:** Python, BeautifulSoup, PostgreSQL
 
-Parsing Armenian laws and regulations from the official website of the Republic of Armeniato allow the users to search for certain laws and regulations by keywords. The project is in the early stages of development and is being done in Python.
+Parsing Armenian laws and regulations from the official website of the Republic of Armenia to allow the users to search for certain laws and regulations by keywords. The project is in the early stages of development and is being done in Python.
 
 #### Scrapper in Scala
+
+<!-- -->
 
 **Tech used:** Scala 3, Cats, ScalaTest, PostgreSQL
 
 Scraping certain e-shops for hot deals and sales. The frontend for this project is Telegram, so the admin panel, the staging channel and the actual channel are all in Telegram.
-
-#### Full-stack developer in JS
-
-**Tech used:** React, Node.js, Next.js, PostgreSQL, Prisma
-
-A shop, providing a wide range of printing services, like stickers, boxes, prints on clothes, etc. The project is in the late stages of development and needs supervision and some refactoring. The main goal is to make the code more readable and maintainable.
 
 ### Scala engineer & team lead - [DataArt Armenia](https://www.dataart.com)
 
