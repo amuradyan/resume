@@ -37,7 +37,7 @@ I help develop and maintain a wide-range printing e-shop. Most of the time I'm i
 
 #### Scrapper in Python
 
-&nbsp
+&nbsp;
 
 **Tech used:** Python, BeautifulSoup, PostgreSQL
 
@@ -45,7 +45,7 @@ Parsing Armenian laws and regulations from the official website of the Republic 
 
 #### Scrapper in Scala
 
-&nbsp
+&nbsp;
 
 **Tech used:** Scala 3, Cats, ScalaTest, PostgreSQL
 
