@@ -8,7 +8,7 @@ function Experiences() {
   const experiences = [
     {
       company: "Platform Factory",
-      role: "Software Engineer",
+      role: "Consulting engineer",
       period: "27.05.2026 - current",
       brief: <>
         <p>Building an agent harness for companies that want to put AI to work on their operations /marketing, tenant onboarding, chief of staff, etc./. It drops into an existing setup and covers what it takes to run agents in production: scaling with demand, guardrails and air-gapping, secrets kept secret and a helpful trace of what the system and the AI did, to understand why.</p>
