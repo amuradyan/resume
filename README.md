@@ -7,9 +7,17 @@
 
 ## Career
 
+### Software engineer - Platform Factory
+
+27.05.2026 - current
+
+**Tech used:** Claude, Lang\*, TypeScript, Python, Kubernetes, Terraform, Azure
+
+Building an agent harness for companies that want to put AI to work on their operations /marketing, tenant onboarding, chief of staff, etc./. It drops into an existing setup and covers what it takes to run agents in production: scaling with demand, guardrails and air-gapping, secrets kept secret and a helpful trace of what the system and the AI did, to understand why.
+
 ### Software engineer - [Grid Dynamics](https://www.griddynamics.com/)
 
-08.05.2025 - current
+08.05.2025 - 10.08.2026
 
 **Tech used:** Scala 2, PredictionIO, Cats, Java 21, GCP
 
@@ -21,11 +29,11 @@ Maintaining and occasionally adding features to a recommendation engine built on
 
 **Tech used:** JavaScript, Deno, LISP
 
-A workshop for high school students on building programming languages. [Shvi](https://github.com/amuradyan/shvi), the language, is inspired by LISP and is a simple notation for writing music. Students moved through each step, supported with reading material and unit tests, gradually adding features and building a simple interpreter. This later got its' spinoff - [Lyre](https://lyre.amuradyan.am).
+A workshop for high school students on building programming languages. [Shvi](https://github.com/amuradyan/shvi), the language, is inspired by LISP and is a simple notation for writing music. Students moved through each step, supported with reading material and unit tests, gradually adding features and building a simple interpreter. This later got its spinoff - [Lyre](https://lyre.amuradyan.am).
 
 ### Consulting engineer - Quality Testing Lab
 
-01.03.2025 - current
+01.03.2025 - 19.06.2025
 
 **Tech used:** React, Next.js, PostgreSQL
 

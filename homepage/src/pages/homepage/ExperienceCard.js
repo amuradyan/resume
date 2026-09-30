@@ -25,7 +25,7 @@ function ExperienceCard({ company, logo, role, period, brief, tech }) {
   return (
     <div className="experience-card">
       <div className="experience-card-left">
-        {imageError ? (
+        {imageError || !logo ? (
           <div
             className="experience-logo-placeholder"
             style={{ backgroundColor: getBackgroundColor(company) }}

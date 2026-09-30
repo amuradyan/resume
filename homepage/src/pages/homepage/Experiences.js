@@ -7,10 +7,19 @@ function Experiences() {
 
   const experiences = [
     {
+      company: "Platform Factory",
+      role: "Software Engineer",
+      period: "27.05.2026 - current",
+      brief: <>
+        <p>Building an agent harness for companies that want to put AI to work on their operations /marketing, tenant onboarding, chief of staff, etc./. It drops into an existing setup and covers what it takes to run agents in production: scaling with demand, guardrails and air-gapping, secrets kept secret and a helpful trace of what the system and the AI did, to understand why.</p>
+      </>,
+      tech: ["Claude", "Lang*", "TypeScript", "Python", "Kubernetes", "Terraform", "Azure"]
+    },
+    {
       company: "Grid Dynamics",
       logo: "/logos/griddynamics.png",
       role: "Software Engineer",
-      period: "08.05.2025 - current",
+      period: "08.05.2025 - 10.08.2026",
       brief: <>
         <p>Maintaining and occasionally adding features to a recommendation engine built on top of PredictionIO in Scala 2 for large e-commerce platforms. Implementing the partial replacement for the engine in Java 21 with Spring Boot. Figuring out the domain via use-cases /AI ftw!/ and setting up meetings.</p>
       </>,
@@ -22,7 +31,7 @@ function Experiences() {
       role: "Workshop Leader",
       period: "01.05.2025 - 31.05.2025",
       brief: <>
-        <p>A workshop for high school students on building programming languages. <a href="https://github.com/amuradyan/shvi" target="_blank" rel="noopener noreferrer">Shvi</a>, the language, is inspired by LISP and is a simple notation for writing music. Students moved through each step, supported with reading material and unit tests, gradually adding features and building a simple interpreter. This later got its' spinoff - <a href="https://lyre.amuradyan.am" target="_blank" rel="noopener noreferrer">Lyre</a>.</p>
+        <p>A workshop for high school students on building programming languages. <a href="https://github.com/amuradyan/shvi" target="_blank" rel="noopener noreferrer">Shvi</a>, the language, is inspired by LISP and is a simple notation for writing music. Students moved through each step, supported with reading material and unit tests, gradually adding features and building a simple interpreter. This later got its spinoff - <a href="https://lyre.amuradyan.am" target="_blank" rel="noopener noreferrer">Lyre</a>.</p>
       </>,
       tech: ["JavaScript", "Deno", "LISP"]
     },
@@ -30,7 +39,7 @@ function Experiences() {
       company: "Quality Testing Lab",
       logo: "/logos/qtl.png",
       role: "Consulting engineer",
-      period: "01.03.2025 - current",
+      period: "01.03.2025 - 19.06.2025",
       brief: <>
         <p>I help develop and maintain a wide-range printing e-shop. Most of the time I'm in the backend, integrating logistics, adding logs or building images, but occasionally I'll do some coding in the front. Mainly I steer both ends in terms of design and practices.</p>
       </>,
