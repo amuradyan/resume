@@ -9,6 +9,7 @@ function ProfileHeader({
   theme = 'personal'
 }) {
   const photoSrc = theme === 'charcoal' ? '/me-greyscale.png' : '/me.png';
+  const cvHref = `/AndranikMuradyan.pdf?v=${process.env.REACT_APP_VERSION ?? 'dev'}`;
 
   return (
     <>
@@ -21,7 +22,7 @@ function ProfileHeader({
       />
       <div className={iconsClassName}>
         {showCV && (
-          <a href="/AndranikMuradyan.pdf" target="_blank" rel="noopener noreferrer" title="CV">
+          <a href={cvHref} target="_blank" rel="noopener noreferrer" title="CV">
             <img src="/cv.min.png" alt="CV" />
           </a>
         )}

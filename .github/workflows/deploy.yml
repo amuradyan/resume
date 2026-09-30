@@ -35,6 +35,8 @@ jobs:
         run: |
           cd homepage
           npm run build
+        env:
+          REACT_APP_VERSION: ${{ github.sha }}
 
       - name: Set up SSH Agent
         uses: webfactory/ssh-agent@v0.5.3
