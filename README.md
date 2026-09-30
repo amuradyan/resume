@@ -161,4 +161,4 @@ I, then, continued my education at The National Academy of Sciences of Armenia i
 
 * Armenian - native
 * Russian - advanced
-* English - upper-intermediate
+* English - fluent
