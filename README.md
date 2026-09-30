@@ -7,7 +7,7 @@
 
 ## Career
 
-### Consulting engineer - Platform Factory
+### /Consulting/ Engineer - Platform Factory
 
 27.05.2026 - current
 
